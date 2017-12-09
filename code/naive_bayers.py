@@ -27,7 +27,7 @@ class NaiveBayers():
         self.load_data()
         self.create_test_set()
         self.fit()
-        self.find_accuracy()
+        # self.find_accuracy()
         self.logger.info("Naive Bayers classifier ready.")
 
     def classify(self, sentence):
@@ -37,25 +37,30 @@ class NaiveBayers():
         positive_probablity, negative_probablity = self.find_conditional_probability(sentence)
 
         #TODO discuss with abhi about the edge cases
-        if positive_probablity == 1 and negative_probablity == 1: #unable to classify a sentence
-            self.logger.info("sentence - " + sentence + " - is neutral")
-            return ("neutral", -1, positive_probablity)
+        # if positive_probablity == 1 and negative_probablity == 1: #unable to classify a sentence
+        #     self.logger.debug("sentence - " + sentence + " - is neutral")
+        #     return ("neutral", -1, positive_probablity)
 
         if positive_probablity == 1 and negative_probablity != 1:
-            self.logger.info("sentence - " + sentence + " - is negative")
+            self.logger.debug("sentence - " + sentence + " - is negative")
             return ("negative", 0, negative_probablity)        
         
         if positive_probablity != 1 and negative_probablity == 1:
-            self.logger.info("sentence - " + sentence + " - is positive")
+            self.logger.debug("sentence - " + sentence + " - is positive")
             return ("positive", 1, positive_probablity)
 
         if positive_probablity > negative_probablity:
-            self.logger.info("sentence - " + sentence + " - is positive")
+            self.logger.debug("sentence - " + sentence + " - is positive")
             return ("positive", 1, positive_probablity)
 
         if negative_probablity > positive_probablity:
-            self.logger.info("sentence - " + sentence + " - is negative")
+            self.logger.debug("sentence - " + sentence + " - is negative")
             return ("negative", 0, negative_probablity)
+
+        if negative_probablity == positive_probablity: #unable to classify a sentence
+            self.logger.debug("sentence - " + sentence + " - is neutral")
+            return ("neutral", -1, positive_probablity)
+
 
     def find_conditional_probability(self, sentence):
         '''
@@ -77,17 +82,25 @@ class NaiveBayers():
         for k in range(self.no_of_grams, 0, -1):
             kgrams.extend(self.get_kgrams(sentence, k))
         
-        for kgram in kgrams:
+        # for kgram in kgrams: #this give around 80%
+        #     phrase = ' '.join(kgram)
+        #     sentence = ' '.join(sentence)
+        #     if phrase in sentence and phrase in self.phrase_probabilities:
+        #         phrase_positive_probability, phrase_negative_probability = self.phrase_probabilities[phrase]
+        #         count = sentence.count(phrase)
+        #         self.logger.debug(phrase + " " + str(phrase_positive_probability) + " " + str(phrase_negative_probability)  + " " + str(count))
+        #         sentence_positive_probablity *= phrase_positive_probability ** count
+        #         sentence_negative_probablity *= phrase_negative_probability ** count
+        #         sentence = sentence.replace(phrase, ' ')
+        #     sentence = self.preprocess(sentence)
+
+        for kgram in kgrams: #this give 75%
             phrase = ' '.join(kgram)
-            sentence = ' '.join(sentence)
-            if phrase in sentence and phrase in self.phrase_probabilities:
+            if phrase in self.phrase_probabilities:
                 phrase_positive_probability, phrase_negative_probability = self.phrase_probabilities[phrase]
-                count = sentence.count(phrase)
-                self.logger.debug(phrase + " " + str(phrase_positive_probability) + " " + str(phrase_negative_probability)  + " " + str(count))
-                sentence_positive_probablity *= phrase_positive_probability ** count
-                sentence_negative_probablity *= phrase_negative_probability ** count
-                sentence = sentence.replace(phrase, ' ')
-            sentence = self.preprocess(sentence)
+                self.logger.debug(phrase + " " + str(phrase_positive_probability) + " " + str(phrase_negative_probability))
+                sentence_positive_probablity *= phrase_positive_probability
+                sentence_negative_probablity *= phrase_negative_probability
 
         return sentence_positive_probablity, sentence_negative_probablity
 
@@ -322,25 +335,29 @@ class NaiveBayers():
         wrong += _wrong
 
         self.accuracy = (correct/total) * 100
-        self.info("total test sentences : " + str(total))
-        self.info("correct output : " + str(correct))
-        self.info("wrong output : " + str(wrong))
-        self.info("accuracy (%) : " + str(int(self.accuracy)))
+        self.logger.info("total test sentences : " + str(total))
+        self.logger.info("correct output : " + str(correct))
+        self.logger.info("wrong output : " + str(wrong))
+        self.logger.info("accuracy (%) : " + str(int(self.accuracy)))
         
     def test_for_bag(self, bag, actual_result):
         correct, wrong = 0, 0
-
         for sentence in bag:
+            sentence = ' '.join(sentence)
             result = self.classify(sentence=sentence)
+            if result is None:
+                self.logger.info("result is none : " + str(sentence))
+                wrong += 1
+                continue
             if result[1] == actual_result:
                 correct += 1
             else:
                 wrong += 1
 
-        self.debug("total test sentences in bag : " + str(len(bag)))
-        self.debug("correct output : " + str(correct))
-        self.debug("wrong output : " + str(wrong))
-        self.debug("accuracy (%) : " + str(int((correct/len(bag)) * 100)))
+        self.logger.debug("total test sentences in bag : " + str(len(bag)))
+        self.logger.debug("correct output : " + str(correct))
+        self.logger.debug("wrong output : " + str(wrong))
+        self.logger.debug("accuracy (%) : " + str(int((correct/len(bag)) * 100)))
         return correct, wrong
 
 
@@ -349,8 +366,7 @@ class NaiveBayers():
 
 nb = NaiveBayers(verbose=False, test_set_count=100, no_of_grams=4)
 nb.ready()
-#nb.test_for_fish_guitar()
-
+# nb.test_for_fish_guitar()
 while(True):
     sentence = input("Give me a sentence : ")
     print(nb.classify(sentence))
