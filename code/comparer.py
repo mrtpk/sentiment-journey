@@ -64,6 +64,22 @@ class Comparer():
         self.logger.info("Wrong classification : " + str(self.tb_wrong))
         self.logger.info("Accuracy : " + str(int(self.tb_accuracy)))
 
+        self.testcases["nb_results"] = {
+            "correct" : self.nb_correct,
+            "wrong" : self.nb_wrong,
+            "accuracy" : self.nb_accuracy
+        }
+        self.testcases["bw_results"] = {
+            "correct" : self.bw_correct,
+            "wrong" : self.bw_wrong,
+            "accuracy" : self.bw_accuracy
+        }
+        self.testcases["tb_results"] = {
+            "correct" : self.tb_correct,
+            "wrong" : self.tb_wrong,
+            "accuracy" : self.tb_accuracy
+        }
+
         self.store_results()
 
     def store_results(self):
@@ -99,7 +115,7 @@ class Comparer():
                 self.tb_correct += 1
             else:
                 self.tb_wrong += 1
-
+        
     def classify_using_textblob(self, sentence):
         '''
         classifies the sentence using textblob library
