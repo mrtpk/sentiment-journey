@@ -25,16 +25,16 @@ this can't be good --> here (be) should be avoided
 # print(m)
 # print(l)
 
-def get_kgrams(sentence, k=1):
-    '''
-    return list of kgrams from a given sentence
-    '''
-    grams = list()
-    for i in range(len(sentence)):
-        grams.append(sentence[i:i+k])
-        if i+k >= len(sentence):
-            break
-    return grams
+# def get_kgrams(sentence, k=1):
+#     '''
+#     return list of kgrams from a given sentence
+#     '''
+#     grams = list()
+#     for i in range(len(sentence)):
+#         grams.append(sentence[i:i+k])
+#         if i+k >= len(sentence):
+#             break
+#     return grams
 
 
 # print(get_kgrams(['a','b','c','d','e'], k=1))
@@ -64,6 +64,27 @@ def get_kgrams(sentence, k=1):
 
 # a, b = [0,1]
 # print(a, b)
-a,b = 1, 1
-a,b += 2, 2
-print(a,b)
+# a,b = 1, 1
+# a,b += 2, 2
+# print(a,b)
+
+ignore_characters = '''\t\n&"`~@#$%^*;+=<>//.,()[]{'}!?:;'''
+def tokenise(self, sentence):
+    sentence = self.clean(sentence)
+    tokens = sentence.split(' ')
+    filtered_tokens = list()
+    for token in tokens:
+        if len(token.strip()) != 0:
+            filtered_tokens.append(token)
+    return filtered_tokens
+
+def clean(sentence):
+    sentence = replace_characters(sentence, ignore_characters)
+    return sentence.lower().strip()
+
+def replace_characters(text, characters):
+    for char in characters:
+        text = text.replace(char, ' ' + char + ' ')
+    return text
+
+print(clean("this isn't what i have asked for"))

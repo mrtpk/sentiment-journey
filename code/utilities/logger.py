@@ -5,19 +5,13 @@ import logging
 import sys
 class Logger:
     logger = None
-    def __init__(self, logger_name=None,filename=None, mode='w'):
+    def __init__(self, logger_name=None,filename=None, mode='w', is_verbose=True):
+        self.is_verbose = is_verbose
+
         if(Logger.logger is None):           
             Logger.logger = self.create_logger(logger_name)
             Logger.logger.addHandler(self.create_stream_handler())
             Logger.logger.addHandler(self.create_file_handler(filename, mode))
-
-    # @staticmethod
-    # def getLogger(logger_name=None,filename=None):
-    #     if(Logger.logger is None):           
-    #         Logger.logger = self.create_logger(logger_name)
-    #         Logger.logger.addHandler(self.create_stream_handler())
-    #         Logger.logger.addHandler(self.create_file_handler(filename))
-    #     return Logger.logger
     
     def create_logger(self, logger_name, level=logging.DEBUG):
         if Logger.logger is None:
@@ -41,6 +35,9 @@ class Logger:
         return file_handler
 
     def info(self, message):
+        if self.is_verbose is False:
+            Logger.logger.debug(message)
+            return
         Logger.logger.info(message)
 
     def debug(self, message):

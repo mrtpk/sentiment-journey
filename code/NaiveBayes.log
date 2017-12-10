@@ -1,0 +1,30 @@
+2017-12-10 17:03:18,818 - NaiveBayes - DEBUG - sentences from mixed bag imported
+2017-12-10 17:03:18,818 - NaiveBayes - DEBUG - positive sentences : 1500
+2017-12-10 17:03:18,818 - NaiveBayes - DEBUG - negative sentences : 1500
+2017-12-10 17:03:19,063 - NaiveBayes - DEBUG - sentences from positive bag imported
+2017-12-10 17:03:19,063 - NaiveBayes - DEBUG - positive sentences : 5331
+2017-12-10 17:03:19,297 - NaiveBayes - DEBUG - sentences from negative bag imported
+2017-12-10 17:03:19,297 - NaiveBayes - DEBUG - negative sentences : 5331
+2017-12-10 17:03:19,297 - NaiveBayes - INFO - sentences imported
+2017-12-10 17:03:19,297 - NaiveBayes - INFO - Total sentences : 13662
+2017-12-10 17:03:19,297 - NaiveBayes - INFO - positive sentences : 6831
+2017-12-10 17:03:19,297 - NaiveBayes - INFO - negative sentences : 6831
+2017-12-10 17:03:19,561 - NaiveBayes - INFO - test sentences selected
+2017-12-10 17:03:19,561 - NaiveBayes - INFO - Total sentences for testing : 500
+2017-12-10 17:03:19,561 - NaiveBayes - INFO - positive sentences for testing : 250
+2017-12-10 17:03:19,561 - NaiveBayes - INFO - negative sentences for testing : 250
+2017-12-10 17:03:19,561 - NaiveBayes - INFO - training started
+2017-12-10 17:03:19,561 - NaiveBayes - INFO - total sentences : 13162
+2017-12-10 17:03:19,561 - NaiveBayes - INFO - positive sentences : 6581
+2017-12-10 17:03:19,561 - NaiveBayes - INFO - negative sentences : 6581
+2017-12-10 17:03:22,062 - NaiveBayes - INFO - calculated occurrences
+2017-12-10 17:03:22,062 - NaiveBayes - INFO - unique phrases : 496722
+2017-12-10 17:03:22,062 - NaiveBayes - INFO - phrases in positive class : 412599
+2017-12-10 17:03:22,062 - NaiveBayes - INFO - phrases in negative class : 410466
+2017-12-10 17:03:23,463 - NaiveBayes - INFO - conditional probality for phrases calculated
+2017-12-10 17:03:23,463 - NaiveBayes - INFO - training completed
+2017-12-10 17:03:23,463 - NaiveBayes - INFO - Naive Bayers classifier ready.
+2017-12-10 17:03:24,398 - NaiveBayes - DEBUG - guitar jazz 1.0996853800127783e-06 2.204570957423121e-06 1
+2017-12-10 17:03:24,398 - NaiveBayes - DEBUG - line 2.639244912030668e-05 4.2989133669750864e-05 1
+2017-12-10 17:03:24,398 - NaiveBayes - DEBUG - sentence - line guitar jazz  - is negative
+2017-12-10 17:03:24,398 - NaiveBayes - INFO - ('negative', 0, 2.3693148893278298e-11)

@@ -1,8 +1,11 @@
 from utilities.logger import Logger
 
-class NaiveBayers():
+class NaiveBayes():
+    '''
+    implementation of Naive Bayes classifer
+    '''
     def __init__(self, verbose=True, test_set_count=500, no_of_grams=1):
-        self.logger = Logger('NaiveBayers', 'NaiveBayers.log')
+        self.logger = Logger('NaiveBayes', 'NaiveBayes.log', is_verbose=verbose)
         self.verbose = verbose
         self.counts = dict()
         self.positive_bag = []
@@ -36,7 +39,6 @@ class NaiveBayers():
         '''
         positive_probablity, negative_probablity = self.find_conditional_probability(sentence)
 
-        #TODO discuss with abhi about the edge cases
         # if positive_probablity == 1 and negative_probablity == 1: #unable to classify a sentence
         #     self.logger.debug("sentence - " + sentence + " - is neutral")
         #     return ("neutral", -1, positive_probablity)
@@ -59,8 +61,8 @@ class NaiveBayers():
 
         if negative_probablity == positive_probablity: #unable to classify a sentence
             self.logger.debug("sentence - " + sentence + " - is neutral")
+            self.logger.debug("no sense can be deduced from this sentence")
             return ("neutral", -1, positive_probablity)
-
 
     def find_conditional_probability(self, sentence):
         '''
@@ -82,25 +84,25 @@ class NaiveBayers():
         for k in range(self.no_of_grams, 0, -1):
             kgrams.extend(self.get_kgrams(sentence, k))
         
-        # for kgram in kgrams: #this give around 80%
-        #     phrase = ' '.join(kgram)
-        #     sentence = ' '.join(sentence)
-        #     if phrase in sentence and phrase in self.phrase_probabilities:
-        #         phrase_positive_probability, phrase_negative_probability = self.phrase_probabilities[phrase]
-        #         count = sentence.count(phrase)
-        #         self.logger.debug(phrase + " " + str(phrase_positive_probability) + " " + str(phrase_negative_probability)  + " " + str(count))
-        #         sentence_positive_probablity *= phrase_positive_probability ** count
-        #         sentence_negative_probablity *= phrase_negative_probability ** count
-        #         sentence = sentence.replace(phrase, ' ')
-        #     sentence = self.preprocess(sentence)
-
-        for kgram in kgrams: #this give 75%
+        for kgram in kgrams: #this give around 80%
             phrase = ' '.join(kgram)
-            if phrase in self.phrase_probabilities:
+            sentence = ' '.join(sentence)
+            if phrase in sentence and phrase in self.phrase_probabilities:
                 phrase_positive_probability, phrase_negative_probability = self.phrase_probabilities[phrase]
-                self.logger.debug(phrase + " " + str(phrase_positive_probability) + " " + str(phrase_negative_probability))
-                sentence_positive_probablity *= phrase_positive_probability
-                sentence_negative_probablity *= phrase_negative_probability
+                count = sentence.count(phrase)
+                self.logger.debug(phrase + " " + str(phrase_positive_probability) + " " + str(phrase_negative_probability)  + " " + str(count))
+                sentence_positive_probablity *= phrase_positive_probability ** count
+                sentence_negative_probablity *= phrase_negative_probability ** count
+                sentence = sentence.replace(phrase, ' ')
+            sentence = self.preprocess(sentence)
+
+        # for kgram in kgrams: #this give 75%
+        #     phrase = ' '.join(kgram)
+        #     if phrase in self.phrase_probabilities:
+        #         phrase_positive_probability, phrase_negative_probability = self.phrase_probabilities[phrase]
+        #         self.logger.debug(phrase + " " + str(phrase_positive_probability) + " " + str(phrase_negative_probability))
+        #         sentence_positive_probablity *= phrase_positive_probability
+        #         sentence_negative_probablity *= phrase_negative_probability
 
         return sentence_positive_probablity, sentence_negative_probablity
 
@@ -204,7 +206,6 @@ class NaiveBayers():
         self.counts["negative sentences"] = len(self.negative_bag)
         self.counts["total sentences"] = len(self.positive_bag) + len(self.negative_bag)
 
- 
     def load_data(self):
         '''
         loads the positive and negative sentences from filenames specified
@@ -304,6 +305,12 @@ class NaiveBayers():
             text = text.replace(char, ' ')
         return text
 
+    def get_positive_test_bag(self):
+        return self.positve_test_bag
+
+    def get_negative_test_bag(self):
+        return self.negative_test_bag
+
     def test_for_fish_guitar(self):
         positive_sentences = ["fish smoked fish", "fish line", "fish haul smoked"]
         negative_sentences = ["guitar jazz line"]
@@ -319,8 +326,7 @@ class NaiveBayers():
         test_sentence = "line guitar jazz jazz"
         result = self.classify(sentence=test_sentence)
         self.logger.info(str(result))
-
-
+        return result
 
     def find_accuracy(self):
         correct, wrong = 0, 0
@@ -361,12 +367,10 @@ class NaiveBayers():
         return correct, wrong
 
 
-
-
-
-nb = NaiveBayers(verbose=False, test_set_count=100, no_of_grams=4)
+nb = NaiveBayes(verbose=True, test_set_count=500, no_of_grams=4)
 nb.ready()
-# nb.test_for_fish_guitar()
-while(True):
-    sentence = input("Give me a sentence : ")
-    print(nb.classify(sentence))
+response = nb.test_for_fish_guitar()
+print(response)
+# while(True):
+#     sentence = input("Give me a sentence : ")
+#     print(nb.classify(sentence))
