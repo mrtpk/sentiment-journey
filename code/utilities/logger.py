@@ -4,20 +4,20 @@ Module to handle logs
 import logging
 import sys
 class Logger:
-    logger = None
     def __init__(self, logger_name=None,filename=None, mode='w', is_verbose=True):
         self.is_verbose = is_verbose
+        self.logger = None
 
-        if(Logger.logger is None):           
-            Logger.logger = self.create_logger(logger_name)
-            Logger.logger.addHandler(self.create_stream_handler())
-            Logger.logger.addHandler(self.create_file_handler(filename, mode))
+        if(self.logger is None):           
+            self.logger = self.create_logger(logger_name)
+            self.logger.addHandler(self.create_stream_handler())
+            self.logger.addHandler(self.create_file_handler(filename, mode))
     
     def create_logger(self, logger_name, level=logging.DEBUG):
-        if Logger.logger is None:
-            Logger.logger = logging.getLogger(logger_name)
-            Logger.logger.setLevel(level)
-        return Logger.logger
+        if self.logger is None:
+            self.logger = logging.getLogger(logger_name)
+            self.logger.setLevel(level)
+        return self.logger
 
     def get_formatter(self):
         return logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -36,9 +36,9 @@ class Logger:
 
     def info(self, message):
         if self.is_verbose is False:
-            Logger.logger.debug(message)
+            self.logger.debug(message)
             return
-        Logger.logger.info(message)
+        self.logger.info(message)
 
     def debug(self, message):
-        Logger.logger.debug(message)
+        self.logger.debug(message)

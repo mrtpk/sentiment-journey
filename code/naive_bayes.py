@@ -27,6 +27,7 @@ class NaiveBayes():
         self.phrase_probabilities = dict()
 
     def ready(self):
+        self.logger.info("starting Naive Bayers classifier")
         self.load_data()
         self.create_test_set()
         self.fit()
@@ -44,24 +45,24 @@ class NaiveBayes():
         #     return ("neutral", -1, positive_probablity)
 
         if positive_probablity == 1 and negative_probablity != 1:
-            self.logger.debug("sentence - " + sentence + " - is negative")
+            self.logger.info("sentence - " + sentence + " - is negative")
             return ("negative", 0, negative_probablity)        
         
         if positive_probablity != 1 and negative_probablity == 1:
-            self.logger.debug("sentence - " + sentence + " - is positive")
+            self.logger.info("sentence - " + sentence + " - is positive")
             return ("positive", 1, positive_probablity)
 
         if positive_probablity > negative_probablity:
-            self.logger.debug("sentence - " + sentence + " - is positive")
+            self.logger.info("sentence - " + sentence + " - is positive")
             return ("positive", 1, positive_probablity)
 
         if negative_probablity > positive_probablity:
-            self.logger.debug("sentence - " + sentence + " - is negative")
+            self.logger.info("sentence - " + sentence + " - is negative")
             return ("negative", 0, negative_probablity)
 
         if negative_probablity == positive_probablity: #unable to classify a sentence
-            self.logger.debug("sentence - " + sentence + " - is neutral")
-            self.logger.debug("no sense can be deduced from this sentence")
+            self.logger.info("sentence - " + sentence + " - is neutral")
+            self.logger.info("no sense can be deduced from this sentence")
             return ("neutral", -1, positive_probablity)
 
     def find_conditional_probability(self, sentence):
@@ -90,7 +91,7 @@ class NaiveBayes():
             if phrase in sentence and phrase in self.phrase_probabilities:
                 phrase_positive_probability, phrase_negative_probability = self.phrase_probabilities[phrase]
                 count = sentence.count(phrase)
-                self.logger.debug(phrase + " " + str(phrase_positive_probability) + " " + str(phrase_negative_probability)  + " " + str(count))
+                self.logger.info(phrase + " " + str(phrase_positive_probability) + " " + str(phrase_negative_probability)  + " " + str(count))
                 sentence_positive_probablity *= phrase_positive_probability ** count
                 sentence_negative_probablity *= phrase_negative_probability ** count
                 sentence = sentence.replace(phrase, ' ')
@@ -347,6 +348,7 @@ class NaiveBayes():
         self.logger.info("accuracy (%) : " + str(int(self.accuracy)))
         
     def test_for_bag(self, bag, actual_result):
+        self.logger.is_verbose = False
         correct, wrong = 0, 0
         for sentence in bag:
             sentence = ' '.join(sentence)
@@ -359,7 +361,7 @@ class NaiveBayes():
                 correct += 1
             else:
                 wrong += 1
-
+        self.logger.is_verbose = True
         self.logger.debug("total test sentences in bag : " + str(len(bag)))
         self.logger.debug("correct output : " + str(correct))
         self.logger.debug("wrong output : " + str(wrong))

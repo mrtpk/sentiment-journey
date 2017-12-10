@@ -7,11 +7,22 @@ from naive_bayes import NaiveBayes
 from bag_of_words import BagOfWordSentiment
 
 class Comparer():
-    def __init__(self, no_of_testcases = 100, verbose=True):
+    def __init__(self, no_of_testcases = 100, verbose=True, nb=None, bw=None):
         self.logger = Logger('Comparer', 'logs\\comparer.log', is_verbose=verbose)
-
-        self.nb = NaiveBayes(verbose=False, test_set_count=no_of_testcases, no_of_grams=4)
-        self.bw = BagOfWordSentiment(verbose=False, no_of_grams=4)
+        
+        if nb is None:
+            self.nb = NaiveBayes(verbose=False, test_set_count=no_of_testcases, no_of_grams=4)
+            self.nb.ready()
+        else:
+            self.nb = nb
+            self.nb.logger.is_verbose = False
+        
+        if bw is None:
+            self.bw = BagOfWordSentiment(verbose=False, no_of_grams=4)
+            self.bw.ready()
+        else:
+            self.bw = bw
+            self.bw.logger.is_verbose = False
 
         self.no_of_testcases = no_of_testcases
         self.nb_correct, self.bw_correct, self.tb_correct = 0, 0, 0
@@ -21,10 +32,8 @@ class Comparer():
         self.counter = 0
         self.testcases = dict()
 
-
     def ready(self):
-        self.nb.ready()
-        self.bw.ready()
+
         self.positive_test_bag = self.nb.get_positive_test_bag()
         self.negative_test_bag = self.nb.get_negative_test_bag()
 

@@ -17,7 +17,9 @@ class BagOfWordSentiment():
         self.negative_test_bag = list()
 
     def ready(self):
+        self.logger.info("Bag of words loading")
         self.load_data()
+        self.logger.info("Bag of words ready")
 
     def classify(self, sentence):
         '''
@@ -283,7 +285,8 @@ class BagOfWordSentiment():
         return data
 
     def find_accuracy(self):
-        
+
+                
         self.load_test_cases()
         self.create_test_set()
 
@@ -306,6 +309,7 @@ class BagOfWordSentiment():
         return (self.accuracy, total, correct, wrong)
         
     def test_for_bag(self, bag, actual_result):
+        self.logger.is_verbose = False
         correct, wrong = 0, 0
         for sentence in bag:
             result = self.classify(sentence=sentence)
@@ -313,7 +317,7 @@ class BagOfWordSentiment():
                 correct += 1
             else:
                 wrong += 1
-
+        self.logger.is_verbose = True
         self.logger.debug("total test sentences in bag : " + str(len(bag)))
         self.logger.debug("correct output : " + str(correct))
         self.logger.debug("wrong output : " + str(wrong))

@@ -1,0 +1,33 @@
+2017-12-10 22:38:35,985 - BagOfWordSentiment - INFO - Bag of words loading
+2017-12-10 22:38:36,038 - BagOfWordSentiment - INFO - words loaded
+2017-12-10 22:38:36,038 - BagOfWordSentiment - INFO - double negations : 12
+2017-12-10 22:38:36,039 - BagOfWordSentiment - INFO - negations : 34
+2017-12-10 22:38:36,039 - BagOfWordSentiment - INFO - positive words : 5539
+2017-12-10 22:38:36,039 - BagOfWordSentiment - INFO - negative words : 9551
+2017-12-10 22:38:36,039 - BagOfWordSentiment - INFO - Bag of words ready
+2017-12-10 22:38:58,455 - BagOfWordSentiment - INFO - sentence : somtimes i wonder
+2017-12-10 22:38:58,455 - BagOfWordSentiment - INFO - tokenised sentence after cleaning : ['somtimes', 'wonder']
+2017-12-10 22:38:58,455 - BagOfWordSentiment - INFO - considering phrase 'somtimes wonder' from 'somtimes wonder'
+2017-12-10 22:38:58,470 - BagOfWordSentiment - INFO - cannot deduce sentiment from phrase 'somtimes wonder'
+2017-12-10 22:38:58,470 - BagOfWordSentiment - INFO - considering phrase 'somtimes wonder' from 'somtimes wonder'
+2017-12-10 22:38:58,478 - BagOfWordSentiment - INFO - cannot deduce sentiment from phrase 'somtimes wonder'
+2017-12-10 22:38:58,479 - BagOfWordSentiment - INFO - considering phrase 'somtimes wonder' from 'somtimes wonder'
+2017-12-10 22:38:58,480 - BagOfWordSentiment - INFO - cannot deduce sentiment from phrase 'somtimes wonder'
+2017-12-10 22:38:58,481 - BagOfWordSentiment - INFO - considering phrase 'somtimes' from 'somtimes wonder'
+2017-12-10 22:38:58,481 - BagOfWordSentiment - INFO - cannot deduce sentiment from phrase 'somtimes'
+2017-12-10 22:38:58,482 - BagOfWordSentiment - INFO - considering phrase 'wonder' from 'somtimes wonder'
+2017-12-10 22:38:58,483 - BagOfWordSentiment - INFO - positive phrase : wonder
+2017-12-10 22:38:58,483 - BagOfWordSentiment - INFO - sentence - somtimes i wonder - is positive
+2017-12-10 22:39:12,256 - BagOfWordSentiment - INFO - sentence : sometimes I wonder
+2017-12-10 22:39:12,256 - BagOfWordSentiment - INFO - tokenised sentence after cleaning : ['sometimes', 'wonder']
+2017-12-10 22:39:12,256 - BagOfWordSentiment - INFO - considering phrase 'sometimes wonder' from 'sometimes wonder'
+2017-12-10 22:39:12,256 - BagOfWordSentiment - INFO - cannot deduce sentiment from phrase 'sometimes wonder'
+2017-12-10 22:39:12,256 - BagOfWordSentiment - INFO - considering phrase 'sometimes wonder' from 'sometimes wonder'
+2017-12-10 22:39:12,256 - BagOfWordSentiment - INFO - cannot deduce sentiment from phrase 'sometimes wonder'
+2017-12-10 22:39:12,272 - BagOfWordSentiment - INFO - considering phrase 'sometimes wonder' from 'sometimes wonder'
+2017-12-10 22:39:12,272 - BagOfWordSentiment - INFO - cannot deduce sentiment from phrase 'sometimes wonder'
+2017-12-10 22:39:12,272 - BagOfWordSentiment - INFO - considering phrase 'sometimes' from 'sometimes wonder'
+2017-12-10 22:39:12,272 - BagOfWordSentiment - INFO - cannot deduce sentiment from phrase 'sometimes'
+2017-12-10 22:39:12,272 - BagOfWordSentiment - INFO - considering phrase 'wonder' from 'sometimes wonder'
+2017-12-10 22:39:12,272 - BagOfWordSentiment - INFO - positive phrase : wonder
+2017-12-10 22:39:12,272 - BagOfWordSentiment - INFO - sentence - sometimes I wonder - is positive

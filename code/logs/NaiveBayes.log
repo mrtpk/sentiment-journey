@@ -1,0 +1,27 @@
+2017-12-10 22:38:36,040 - NaiveBayes - INFO - starting Naive Bayers classifier
+2017-12-10 22:38:36,111 - NaiveBayes - DEBUG - sentences from mixed bag imported
+2017-12-10 22:38:36,111 - NaiveBayes - DEBUG - positive sentences : 1500
+2017-12-10 22:38:36,111 - NaiveBayes - DEBUG - negative sentences : 1500
+2017-12-10 22:38:36,234 - NaiveBayes - DEBUG - sentences from positive bag imported
+2017-12-10 22:38:36,234 - NaiveBayes - DEBUG - positive sentences : 5331
+2017-12-10 22:38:36,359 - NaiveBayes - DEBUG - sentences from negative bag imported
+2017-12-10 22:38:36,359 - NaiveBayes - DEBUG - negative sentences : 5331
+2017-12-10 22:38:36,359 - NaiveBayes - INFO - sentences imported
+2017-12-10 22:38:36,359 - NaiveBayes - INFO - Total sentences : 13662
+2017-12-10 22:38:36,359 - NaiveBayes - INFO - positive sentences : 6831
+2017-12-10 22:38:36,359 - NaiveBayes - INFO - negative sentences : 6831
+2017-12-10 22:38:36,359 - NaiveBayes - INFO - test sentences selected
+2017-12-10 22:38:36,359 - NaiveBayes - INFO - Total sentences for testing : 100
+2017-12-10 22:38:36,359 - NaiveBayes - INFO - positive sentences for testing : 50
+2017-12-10 22:38:36,359 - NaiveBayes - INFO - negative sentences for testing : 50
+2017-12-10 22:38:36,359 - NaiveBayes - INFO - training started
+2017-12-10 22:38:36,359 - NaiveBayes - INFO - total sentences : 13562
+2017-12-10 22:38:36,359 - NaiveBayes - INFO - positive sentences : 6781
+2017-12-10 22:38:36,359 - NaiveBayes - INFO - negative sentences : 6781
+2017-12-10 22:38:38,931 - NaiveBayes - INFO - calculated occurrences
+2017-12-10 22:38:38,931 - NaiveBayes - INFO - unique phrases : 510337
+2017-12-10 22:38:38,932 - NaiveBayes - INFO - phrases in positive class : 424860
+2017-12-10 22:38:38,932 - NaiveBayes - INFO - phrases in negative class : 423291
+2017-12-10 22:38:40,166 - NaiveBayes - INFO - conditional probality for phrases calculated
+2017-12-10 22:38:40,166 - NaiveBayes - INFO - training completed
+2017-12-10 22:38:40,166 - NaiveBayes - INFO - Naive Bayers classifier ready.
