@@ -1,9 +1,9 @@
 from utilities.logger import Logger
 
-class NGramsSentiment():
+class BagOfWordSentiment():
     def __init__(self, no_of_grams=4, verbose=True, no_of_testcases=1000):
         self.verbose = verbose
-        self.logger = Logger('n_grams', 'n_grams.log', is_verbose=self.verbose)
+        self.logger = Logger('BagOfWordSentiment', 'logs\\bag_of_words.log', is_verbose=self.verbose)
 
         self.no_of_grams= no_of_grams
 
@@ -15,6 +15,9 @@ class NGramsSentiment():
         self.no_of_testcases = no_of_testcases
         self.positve_test_bag = list()
         self.negative_test_bag = list()
+
+    def ready(self):
+        self.load_data()
 
     def classify(self, sentence):
         '''
@@ -386,14 +389,4 @@ class NGramsSentiment():
         self.logger.debug("Total sentences : " + str(len(self.positive_bag) + len(self.negative_bag)))
         self.logger.debug("positive sentences : " + str(len(self.positive_bag)))
         self.logger.debug("negative sentences : " + str(len(self.negative_bag)))
-
-
-
-
-ng = NGramsSentiment(verbose=True, no_of_testcases=2)
-ng.load_data()
-result = ng.classify(sentence='this is a few hell')
-print(result)
-# print(ng.find_accuracy())
-
-    
+   

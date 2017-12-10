@@ -68,23 +68,23 @@ this can't be good --> here (be) should be avoided
 # a,b += 2, 2
 # print(a,b)
 
-ignore_characters = '''\t\n&"`~@#$%^*;+=<>//.,()[]{'}!?:;'''
-def tokenise(self, sentence):
-    sentence = self.clean(sentence)
-    tokens = sentence.split(' ')
-    filtered_tokens = list()
-    for token in tokens:
-        if len(token.strip()) != 0:
-            filtered_tokens.append(token)
-    return filtered_tokens
+# ignore_characters = '''\t\n&"`~@#$%^*;+=<>//.,()[]{'}!?:;'''
+# def tokenise(self, sentence):
+#     sentence = self.clean(sentence)
+#     tokens = sentence.split(' ')
+#     filtered_tokens = list()
+#     for token in tokens:
+#         if len(token.strip()) != 0:
+#             filtered_tokens.append(token)
+#     return filtered_tokens
 
-def clean(sentence):
-    sentence = replace_characters(sentence, ignore_characters)
-    return sentence.lower().strip()
+# def clean(sentence):
+#     sentence = replace_characters(sentence, ignore_characters)
+#     return sentence.lower().strip()
 
-def replace_characters(text, characters):
-    for char in characters:
-        text = text.replace(char, ' ' + char + ' ')
-    return text
+# def replace_characters(text, characters):
+#     for char in characters:
+#         text = text.replace(char, ' ' + char + ' ')
+#     return text
 
-print(clean("this isn't what i have asked for"))
+# print(clean("this isn't what i have asked for"))

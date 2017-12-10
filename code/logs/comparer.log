@@ -1,0 +1,676 @@
+2017-12-10 18:16:00,437 - Comparer - DEBUG - sentences from mixed bag imported
+2017-12-10 18:16:00,437 - Comparer - DEBUG - positive sentences : 1500
+2017-12-10 18:16:00,437 - Comparer - DEBUG - negative sentences : 1500
+2017-12-10 18:16:00,638 - Comparer - DEBUG - sentences from positive bag imported
+2017-12-10 18:16:00,638 - Comparer - DEBUG - positive sentences : 5331
+2017-12-10 18:16:00,826 - Comparer - DEBUG - sentences from negative bag imported
+2017-12-10 18:16:00,826 - Comparer - DEBUG - negative sentences : 5331
+2017-12-10 18:16:00,826 - Comparer - DEBUG - sentences imported
+2017-12-10 18:16:00,826 - Comparer - DEBUG - Total sentences : 13662
+2017-12-10 18:16:00,826 - Comparer - DEBUG - positive sentences : 6831
+2017-12-10 18:16:00,826 - Comparer - DEBUG - negative sentences : 6831
+2017-12-10 18:16:00,826 - Comparer - DEBUG - test sentences selected
+2017-12-10 18:16:00,826 - Comparer - DEBUG - Total sentences for testing : 10
+2017-12-10 18:16:00,826 - Comparer - DEBUG - positive sentences for testing : 5
+2017-12-10 18:16:00,826 - Comparer - DEBUG - negative sentences for testing : 5
+2017-12-10 18:16:00,826 - Comparer - DEBUG - training started
+2017-12-10 18:16:00,826 - Comparer - DEBUG - total sentences : 13652
+2017-12-10 18:16:00,826 - Comparer - DEBUG - positive sentences : 6826
+2017-12-10 18:16:00,826 - Comparer - DEBUG - negative sentences : 6826
+2017-12-10 18:16:03,448 - Comparer - DEBUG - calculated occurrences
+2017-12-10 18:16:03,448 - Comparer - DEBUG - unique phrases : 513437
+2017-12-10 18:16:03,448 - Comparer - DEBUG - phrases in positive class : 427804
+2017-12-10 18:16:03,448 - Comparer - DEBUG - phrases in negative class : 426111
+2017-12-10 18:16:05,043 - Comparer - DEBUG - conditional probality for phrases calculated
+2017-12-10 18:16:05,043 - Comparer - DEBUG - training completed
+2017-12-10 18:16:05,043 - Comparer - DEBUG - Naive Bayers classifier ready.
+2017-12-10 18:16:05,105 - Comparer - DEBUG - words loaded
+2017-12-10 18:16:05,105 - Comparer - DEBUG - double negations : 12
+2017-12-10 18:16:05,105 - Comparer - DEBUG - negations : 34
+2017-12-10 18:16:05,105 - Comparer - DEBUG - positive words : 5539
+2017-12-10 18:16:05,105 - Comparer - DEBUG - negative words : 9551
+2017-12-10 18:16:05,105 - Comparer - DEBUG - a love story 3.1872814720140752e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,105 - Comparer - DEBUG - a murder mystery 1.062427157338025e-06 2.1286831540272555e-06 1
+2017-12-10 18:16:05,105 - Comparer - DEBUG - a meditation on 2.12485431467605e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,105 - Comparer - DEBUG - a full 4.2497086293521e-06 4.257366308054511e-06 1
+2017-12-10 18:16:05,105 - Comparer - DEBUG - experience a 2.12485431467605e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,105 - Comparer - DEBUG - the deep 2.12485431467605e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,105 - Comparer - DEBUG - of innocence 2.12485431467605e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,105 - Comparer - DEBUG - a 0.0045726864851828595 0.004131774001966904 2
+2017-12-10 18:16:05,105 - Comparer - DEBUG - into 0.00023904611040105562 0.00023628383009702538 1
+2017-12-10 18:16:05,121 - Comparer - DEBUG - on 0.0005652112477038293 0.0006226398225529723 1
+2017-12-10 18:16:05,121 - Comparer - DEBUG - sentence - a full experience a love story and a murder mystery that expands into a meditation on the deep deceptions of innocence - is positive
+2017-12-10 18:16:05,121 - Comparer - DEBUG - sentence : a full experience a love story and a murder mystery that expands into a meditation on the deep deceptions of innocence
+2017-12-10 18:16:05,121 - Comparer - DEBUG - tokenised sentence after cleaning : ['a', 'full', 'experience', 'a', 'love', 'story', 'a', 'murder', 'mystery', 'expands', 'a', 'meditation', 'deep', 'deceptions', 'innocence']
+2017-12-10 18:16:05,121 - Comparer - DEBUG - considering phrase 'a full experience a' from 'a full experience a love story a murder mystery expands a meditation deep deceptions innocence'
+2017-12-10 18:16:05,121 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a full experience a'
+2017-12-10 18:16:05,121 - Comparer - DEBUG - considering phrase 'full experience a love' from 'a full experience a love story a murder mystery expands a meditation deep deceptions innocence'
+2017-12-10 18:16:05,121 - Comparer - DEBUG - cannot deduce sentiment from phrase 'full experience a love'
+2017-12-10 18:16:05,121 - Comparer - DEBUG - considering phrase 'experience a love story' from 'a full experience a love story a murder mystery expands a meditation deep deceptions innocence'
+2017-12-10 18:16:05,121 - Comparer - DEBUG - cannot deduce sentiment from phrase 'experience a love story'
+2017-12-10 18:16:05,121 - Comparer - DEBUG - considering phrase 'a love story a' from 'a full experience a love story a murder mystery expands a meditation deep deceptions innocence'
+2017-12-10 18:16:05,121 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a love story a'
+2017-12-10 18:16:05,121 - Comparer - DEBUG - considering phrase 'love story a murder' from 'a full experience a love story a murder mystery expands a meditation deep deceptions innocence'
+2017-12-10 18:16:05,121 - Comparer - DEBUG - positive phrase : love story a murder
+2017-12-10 18:16:05,121 - Comparer - DEBUG - considering phrase 'mystery expands a meditation' from 'a full experience a mystery expands a meditation deep deceptions innocence'
+2017-12-10 18:16:05,121 - Comparer - DEBUG - negative phrase : mystery expands a meditation
+2017-12-10 18:16:05,121 - Comparer - DEBUG - considering phrase 'a full experience' from 'a full experience a deep deceptions innocence'
+2017-12-10 18:16:05,121 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a full experience'
+2017-12-10 18:16:05,121 - Comparer - DEBUG - considering phrase 'full experience a' from 'a full experience a deep deceptions innocence'
+2017-12-10 18:16:05,121 - Comparer - DEBUG - cannot deduce sentiment from phrase 'full experience a'
+2017-12-10 18:16:05,136 - Comparer - DEBUG - considering phrase 'deep deceptions innocence' from 'a full experience a deep deceptions innocence'
+2017-12-10 18:16:05,136 - Comparer - DEBUG - cannot deduce sentiment from phrase 'deep deceptions innocence'
+2017-12-10 18:16:05,136 - Comparer - DEBUG - considering phrase 'a full' from 'a full experience a deep deceptions innocence'
+2017-12-10 18:16:05,136 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a full'
+2017-12-10 18:16:05,136 - Comparer - DEBUG - considering phrase 'full experience' from 'a full experience a deep deceptions innocence'
+2017-12-10 18:16:05,136 - Comparer - DEBUG - cannot deduce sentiment from phrase 'full experience'
+2017-12-10 18:16:05,136 - Comparer - DEBUG - considering phrase 'experience a' from 'a full experience a deep deceptions innocence'
+2017-12-10 18:16:05,136 - Comparer - DEBUG - cannot deduce sentiment from phrase 'experience a'
+2017-12-10 18:16:05,136 - Comparer - DEBUG - considering phrase 'deep deceptions' from 'a full experience a deep deceptions innocence'
+2017-12-10 18:16:05,136 - Comparer - DEBUG - cannot deduce sentiment from phrase 'deep deceptions'
+2017-12-10 18:16:05,136 - Comparer - DEBUG - considering phrase 'deceptions innocence' from 'a full experience a deep deceptions innocence'
+2017-12-10 18:16:05,136 - Comparer - DEBUG - cannot deduce sentiment from phrase 'deceptions innocence'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - considering phrase 'a' from 'a full experience a deep deceptions innocence'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - considering phrase 'full' from 'a full experience a deep deceptions innocence'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - cannot deduce sentiment from phrase 'full'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - considering phrase 'experience' from 'a full experience a deep deceptions innocence'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - positive phrase : experience
+2017-12-10 18:16:05,152 - Comparer - DEBUG - considering phrase 'a' from 'a full a deep deceptions innocence'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - considering phrase 'a' from 'a full a deep deceptions innocence'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - considering phrase 'a' from 'a full a deep deceptions innocence'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - considering phrase 'deep' from 'a full a deep deceptions innocence'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - cannot deduce sentiment from phrase 'deep'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - considering phrase 'deceptions' from 'a full a deep deceptions innocence'
+2017-12-10 18:16:05,152 - Comparer - DEBUG - negative phrase : deceptions
+2017-12-10 18:16:05,152 - Comparer - DEBUG - considering phrase 'innocence' from 'a full a deep innocence'
+2017-12-10 18:16:05,168 - Comparer - DEBUG - positive phrase : innocence
+2017-12-10 18:16:05,168 - Comparer - DEBUG - sentence - a full experience a love story and a murder mystery that expands into a meditation on the deep deceptions of innocence - is positive
+2017-12-10 18:16:05,308 - Comparer - DEBUG - those moviegoers who 2.12485431467605e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,308 - Comparer - DEBUG - a second look 2.12485431467605e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,308 - Comparer - DEBUG - a hip-hop 2.12485431467605e-06 2.1286831540272555e-06 1
+2017-12-10 18:16:05,308 - Comparer - DEBUG - should give 2.12485431467605e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,308 - Comparer - DEBUG - would 0.00010730514289114052 0.00021925436486480734 1
+2017-12-10 18:16:05,308 - Comparer - DEBUG - automatically 1.062427157338025e-06 4.257366308054511e-06 1
+2017-12-10 18:16:05,308 - Comparer - DEBUG - a 0.0045726864851828595 0.004131774001966904 3
+2017-12-10 18:16:05,308 - Comparer - DEBUG - sentence - those moviegoers who would automatically bypass a hip-hop documentary should give scratch a second look - is positive
+2017-12-10 18:16:05,308 - Comparer - DEBUG - sentence : those moviegoers who would automatically bypass a hip-hop documentary should give scratch a second look
+2017-12-10 18:16:05,308 - Comparer - DEBUG - tokenised sentence after cleaning : ['moviegoers', 'automatically', 'bypass', 'a', 'hip', 'hop', 'documentary', 'should', 'give', 'scratch', 'a', 'second', 'look']
+2017-12-10 18:16:05,308 - Comparer - DEBUG - considering phrase 'moviegoers automatically bypass a' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - cannot deduce sentiment from phrase 'moviegoers automatically bypass a'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - considering phrase 'automatically bypass a hip' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - cannot deduce sentiment from phrase 'automatically bypass a hip'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - considering phrase 'bypass a hip hop' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - cannot deduce sentiment from phrase 'bypass a hip hop'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - considering phrase 'a hip hop documentary' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a hip hop documentary'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - considering phrase 'hip hop documentary should' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - cannot deduce sentiment from phrase 'hip hop documentary should'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - considering phrase 'hop documentary should give' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - cannot deduce sentiment from phrase 'hop documentary should give'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - considering phrase 'documentary should give scratch' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - cannot deduce sentiment from phrase 'documentary should give scratch'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - considering phrase 'should give scratch a' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - cannot deduce sentiment from phrase 'should give scratch a'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - considering phrase 'give scratch a second' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - cannot deduce sentiment from phrase 'give scratch a second'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - considering phrase 'scratch a second look' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - cannot deduce sentiment from phrase 'scratch a second look'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - considering phrase 'moviegoers automatically bypass' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - cannot deduce sentiment from phrase 'moviegoers automatically bypass'
+2017-12-10 18:16:05,308 - Comparer - DEBUG - considering phrase 'automatically bypass a' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - cannot deduce sentiment from phrase 'automatically bypass a'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - considering phrase 'bypass a hip' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - cannot deduce sentiment from phrase 'bypass a hip'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - considering phrase 'a hip hop' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a hip hop'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - considering phrase 'hip hop documentary' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - cannot deduce sentiment from phrase 'hip hop documentary'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - considering phrase 'hop documentary should' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - cannot deduce sentiment from phrase 'hop documentary should'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - considering phrase 'documentary should give' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - cannot deduce sentiment from phrase 'documentary should give'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - considering phrase 'should give scratch' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - cannot deduce sentiment from phrase 'should give scratch'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - considering phrase 'give scratch a' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - cannot deduce sentiment from phrase 'give scratch a'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - considering phrase 'scratch a second' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - cannot deduce sentiment from phrase 'scratch a second'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - considering phrase 'a second look' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - considering phrase 'moviegoers automatically' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - cannot deduce sentiment from phrase 'moviegoers automatically'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - considering phrase 'automatically bypass' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - cannot deduce sentiment from phrase 'automatically bypass'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - considering phrase 'bypass a' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - cannot deduce sentiment from phrase 'bypass a'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - considering phrase 'a hip' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a hip'
+2017-12-10 18:16:05,324 - Comparer - DEBUG - considering phrase 'hip hop' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - cannot deduce sentiment from phrase 'hip hop'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - considering phrase 'hop documentary' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - cannot deduce sentiment from phrase 'hop documentary'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - considering phrase 'documentary should' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - cannot deduce sentiment from phrase 'documentary should'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - considering phrase 'should give' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - cannot deduce sentiment from phrase 'should give'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - considering phrase 'give scratch' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - cannot deduce sentiment from phrase 'give scratch'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - considering phrase 'scratch a' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - cannot deduce sentiment from phrase 'scratch a'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - considering phrase 'a second' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a second'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - considering phrase 'second look' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - cannot deduce sentiment from phrase 'second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - considering phrase 'moviegoers' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - cannot deduce sentiment from phrase 'moviegoers'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - considering phrase 'automatically' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - cannot deduce sentiment from phrase 'automatically'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - considering phrase 'bypass' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - cannot deduce sentiment from phrase 'bypass'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - considering phrase 'a' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - considering phrase 'hip' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - cannot deduce sentiment from phrase 'hip'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - considering phrase 'hop' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - cannot deduce sentiment from phrase 'hop'
+2017-12-10 18:16:05,340 - Comparer - DEBUG - considering phrase 'documentary' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - cannot deduce sentiment from phrase 'documentary'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - considering phrase 'should' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - cannot deduce sentiment from phrase 'should'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - considering phrase 'give' from 'moviegoers automatically bypass a hip hop documentary should give scratch a second look'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - positive phrase : give
+2017-12-10 18:16:05,355 - Comparer - DEBUG - considering phrase 'scratch' from 'moviegoers automatically bypass a hip hop documentary should scratch a second look'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - negative phrase : scratch
+2017-12-10 18:16:05,355 - Comparer - DEBUG - considering phrase 'a' from 'moviegoers automatically bypass a hip hop documentary should a second look'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - considering phrase 'second' from 'moviegoers automatically bypass a hip hop documentary should a second look'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - cannot deduce sentiment from phrase 'second'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - considering phrase 'look' from 'moviegoers automatically bypass a hip hop documentary should a second look'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - cannot deduce sentiment from phrase 'look'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - sentence - those moviegoers who would automatically bypass a hip-hop documentary should give scratch a second look - is neutral
+2017-12-10 18:16:05,355 - Comparer - DEBUG - food arrived 1.062427157338025e-06 2.1286831540272555e-06 1
+2017-12-10 18:16:05,355 - Comparer - DEBUG - quickly 1.3811553045394325e-05 2.447985627131344e-05 1
+2017-12-10 18:16:05,355 - Comparer - DEBUG - sentence - food arrived quickly - is negative
+2017-12-10 18:16:05,355 - Comparer - DEBUG - sentence : food arrived quickly
+2017-12-10 18:16:05,355 - Comparer - DEBUG - tokenised sentence after cleaning : ['food', 'arrived', 'quickly']
+2017-12-10 18:16:05,355 - Comparer - DEBUG - considering phrase 'food arrived quickly' from 'food arrived quickly'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - cannot deduce sentiment from phrase 'food arrived quickly'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - considering phrase 'food arrived quickly' from 'food arrived quickly'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - cannot deduce sentiment from phrase 'food arrived quickly'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - considering phrase 'food arrived' from 'food arrived quickly'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - cannot deduce sentiment from phrase 'food arrived'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - considering phrase 'arrived quickly' from 'food arrived quickly'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - cannot deduce sentiment from phrase 'arrived quickly'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - considering phrase 'food' from 'food arrived quickly'
+2017-12-10 18:16:05,355 - Comparer - DEBUG - cannot deduce sentiment from phrase 'food'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - considering phrase 'arrived' from 'food arrived quickly'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - cannot deduce sentiment from phrase 'arrived'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - considering phrase 'quickly' from 'food arrived quickly'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - positive phrase : quickly
+2017-12-10 18:16:05,371 - Comparer - DEBUG - sentence - food arrived quickly - is positive
+2017-12-10 18:16:05,371 - Comparer - DEBUG - decasia is 2.12485431467605e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,371 - Comparer - DEBUG - difficult and 2.12485431467605e-06 2.1286831540272555e-06 1
+2017-12-10 18:16:05,371 - Comparer - DEBUG - bill 6.3745629440281505e-06 4.257366308054511e-06 1
+2017-12-10 18:16:05,371 - Comparer - DEBUG - morrison's 2.12485431467605e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,371 - Comparer - DEBUG - is 0.002260844990815317 0.0021297474956042694 1
+2017-12-10 18:16:05,371 - Comparer - DEBUG - unbearably 2.12485431467605e-06 5.3217078850681395e-06 1
+2017-12-10 18:16:05,371 - Comparer - DEBUG - beautiful 6.587048375495755e-05 1.1707757347149907e-05 1
+2017-12-10 18:16:05,371 - Comparer - DEBUG - sentence - bill morrison's decasia is uncompromising difficult and unbearably beautiful - is positive
+2017-12-10 18:16:05,371 - Comparer - DEBUG - sentence : bill morrison's decasia is uncompromising difficult and unbearably beautiful
+2017-12-10 18:16:05,371 - Comparer - DEBUG - tokenised sentence after cleaning : ['bill', 'morrisons', 'decasia', 'uncompromising', 'difficult', 'unbearably', 'beautiful']
+2017-12-10 18:16:05,371 - Comparer - DEBUG - considering phrase 'bill morrisons decasia uncompromising' from 'bill morrisons decasia uncompromising difficult unbearably beautiful'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - cannot deduce sentiment from phrase 'bill morrisons decasia uncompromising'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - considering phrase 'morrisons decasia uncompromising difficult' from 'bill morrisons decasia uncompromising difficult unbearably beautiful'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - cannot deduce sentiment from phrase 'morrisons decasia uncompromising difficult'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - considering phrase 'decasia uncompromising difficult unbearably' from 'bill morrisons decasia uncompromising difficult unbearably beautiful'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - cannot deduce sentiment from phrase 'decasia uncompromising difficult unbearably'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - considering phrase 'uncompromising difficult unbearably beautiful' from 'bill morrisons decasia uncompromising difficult unbearably beautiful'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - cannot deduce sentiment from phrase 'uncompromising difficult unbearably beautiful'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - considering phrase 'bill morrisons decasia' from 'bill morrisons decasia uncompromising difficult unbearably beautiful'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - cannot deduce sentiment from phrase 'bill morrisons decasia'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - considering phrase 'morrisons decasia uncompromising' from 'bill morrisons decasia uncompromising difficult unbearably beautiful'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - cannot deduce sentiment from phrase 'morrisons decasia uncompromising'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - considering phrase 'decasia uncompromising difficult' from 'bill morrisons decasia uncompromising difficult unbearably beautiful'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - cannot deduce sentiment from phrase 'decasia uncompromising difficult'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - considering phrase 'uncompromising difficult unbearably' from 'bill morrisons decasia uncompromising difficult unbearably beautiful'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - cannot deduce sentiment from phrase 'uncompromising difficult unbearably'
+2017-12-10 18:16:05,371 - Comparer - DEBUG - considering phrase 'difficult unbearably beautiful' from 'bill morrisons decasia uncompromising difficult unbearably beautiful'
+2017-12-10 18:16:05,386 - Comparer - DEBUG - negative phrase : difficult unbearably beautiful
+2017-12-10 18:16:05,386 - Comparer - DEBUG - considering phrase 'bill morrisons' from 'bill morrisons decasia uncompromising'
+2017-12-10 18:16:05,386 - Comparer - DEBUG - cannot deduce sentiment from phrase 'bill morrisons'
+2017-12-10 18:16:05,386 - Comparer - DEBUG - considering phrase 'morrisons decasia' from 'bill morrisons decasia uncompromising'
+2017-12-10 18:16:05,386 - Comparer - DEBUG - cannot deduce sentiment from phrase 'morrisons decasia'
+2017-12-10 18:16:05,386 - Comparer - DEBUG - considering phrase 'decasia uncompromising' from 'bill morrisons decasia uncompromising'
+2017-12-10 18:16:05,386 - Comparer - DEBUG - cannot deduce sentiment from phrase 'decasia uncompromising'
+2017-12-10 18:16:05,386 - Comparer - DEBUG - considering phrase 'bill' from 'bill morrisons decasia uncompromising'
+2017-12-10 18:16:05,386 - Comparer - DEBUG - cannot deduce sentiment from phrase 'bill'
+2017-12-10 18:16:05,386 - Comparer - DEBUG - considering phrase 'morrisons' from 'bill morrisons decasia uncompromising'
+2017-12-10 18:16:05,386 - Comparer - DEBUG - cannot deduce sentiment from phrase 'morrisons'
+2017-12-10 18:16:05,386 - Comparer - DEBUG - considering phrase 'decasia' from 'bill morrisons decasia uncompromising'
+2017-12-10 18:16:05,386 - Comparer - DEBUG - cannot deduce sentiment from phrase 'decasia'
+2017-12-10 18:16:05,386 - Comparer - DEBUG - considering phrase 'uncompromising' from 'bill morrisons decasia uncompromising'
+2017-12-10 18:16:05,386 - Comparer - DEBUG - negative phrase : uncompromising
+2017-12-10 18:16:05,386 - Comparer - DEBUG - sentence - bill morrison's decasia is uncompromising difficult and unbearably beautiful - is negative
+2017-12-10 18:16:05,386 - Comparer - DEBUG - smarter and more 3.1872814720140752e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,402 - Comparer - DEBUG - sets out to 3.1872814720140752e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,402 - Comparer - DEBUG - than it 1.5936407360070377e-05 1.91581483862453e-05 1
+2017-12-10 18:16:05,402 - Comparer - DEBUG - much 0.00018061261674746424 0.0002841792010626386 1
+2017-12-10 18:16:05,402 - Comparer - DEBUG - attentive 8.4994172587042e-06 2.1286831540272555e-06 1
+2017-12-10 18:16:05,402 - Comparer - DEBUG - first 0.00010942999720581658 9.57907419312265e-05 1
+2017-12-10 18:16:05,402 - Comparer - DEBUG - be 0.0005035904725782239 0.0006503127035553266 1
+2017-12-10 18:16:05,402 - Comparer - DEBUG - sentence - much smarter and more attentive than it first sets out to be - is positive
+2017-12-10 18:16:05,402 - Comparer - DEBUG - sentence : much smarter and more attentive than it first sets out to be
+2017-12-10 18:16:05,402 - Comparer - DEBUG - tokenised sentence after cleaning : ['much', 'smarter', 'attentive', 'first', 'sets', 'out']
+2017-12-10 18:16:05,402 - Comparer - DEBUG - considering phrase 'much smarter attentive first' from 'much smarter attentive first sets out'
+2017-12-10 18:16:05,402 - Comparer - DEBUG - cannot deduce sentiment from phrase 'much smarter attentive first'
+2017-12-10 18:16:05,402 - Comparer - DEBUG - considering phrase 'smarter attentive first sets' from 'much smarter attentive first sets out'
+2017-12-10 18:16:05,402 - Comparer - DEBUG - positive phrase : smarter attentive first sets
+2017-12-10 18:16:05,402 - Comparer - DEBUG - considering phrase 'much' from 'much out'
+2017-12-10 18:16:05,402 - Comparer - DEBUG - cannot deduce sentiment from phrase 'much'
+2017-12-10 18:16:05,402 - Comparer - DEBUG - considering phrase 'out' from 'much out'
+2017-12-10 18:16:05,402 - Comparer - DEBUG - negative phrase : out
+2017-12-10 18:16:05,402 - Comparer - DEBUG - sentence - much smarter and more attentive than it first sets out to be - is neutral
+2017-12-10 18:16:05,418 - Comparer - DEBUG - a movie can be 2.12485431467605e-06 3.1930247310408835e-06 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - as this one 2.12485431467605e-06 4.257366308054511e-06 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - is in every 1.062427157338025e-06 2.1286831540272555e-06 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - too boring and 1.062427157338025e-06 2.1286831540272555e-06 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - it's rare 4.2497086293521e-06 2.1286831540272555e-06 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - that a 9.561844416042225e-06 2.022248996325893e-05 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - except its 2.12485431467605e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - everything that's 2.12485431467605e-06 2.1286831540272555e-06 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - good is 2.12485431467605e-06 4.257366308054511e-06 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - by a 4.2497086293521e-05 4.2573663080545116e-05 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - plot that's 2.12485431467605e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - a 0.0045726864851828595 0.004131774001966904 2
+2017-12-10 18:16:05,418 - Comparer - DEBUG - intelligent 4.887164923754915e-05 1.7029465232218044e-05 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - in 0.0016414499580872485 0.0015773542171341965 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - just 0.00021461028578228104 0.0003789056014168515 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - obvious 1.8061261674746425e-05 4.363800465755874e-05 1
+2017-12-10 18:16:05,418 - Comparer - DEBUG - sentence - it's rare that a movie can be as intelligent as this one is in every regard except its storyline everything that's good is ultimately scuttled by a plot that's just too boring and obvious - is negative
+2017-12-10 18:16:05,418 - Comparer - DEBUG - sentence : it's rare that a movie can be as intelligent as this one is in every regard except its storyline everything that's good is ultimately scuttled by a plot that's just too boring and obvious
+2017-12-10 18:16:05,418 - Comparer - DEBUG - tokenised sentence after cleaning : ['rare', 'a', 'movie', 'can', 'intelligent', 'one', 'every', 'regard', 'except', 'storyline', 'everything', 'good', 'ultimately', 'scuttled', 'a', 'plot', 'just', 'boring', 'obvious']
+2017-12-10 18:16:05,418 - Comparer - DEBUG - considering phrase 'rare a movie can' from 'rare a movie can intelligent one every regard except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,418 - Comparer - DEBUG - cannot deduce sentiment from phrase 'rare a movie can'
+2017-12-10 18:16:05,418 - Comparer - DEBUG - considering phrase 'a movie can intelligent' from 'rare a movie can intelligent one every regard except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,418 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a movie can intelligent'
+2017-12-10 18:16:05,418 - Comparer - DEBUG - considering phrase 'movie can intelligent one' from 'rare a movie can intelligent one every regard except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,418 - Comparer - DEBUG - cannot deduce sentiment from phrase 'movie can intelligent one'
+2017-12-10 18:16:05,418 - Comparer - DEBUG - considering phrase 'can intelligent one every' from 'rare a movie can intelligent one every regard except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,418 - Comparer - DEBUG - cannot deduce sentiment from phrase 'can intelligent one every'
+2017-12-10 18:16:05,418 - Comparer - DEBUG - considering phrase 'intelligent one every regard' from 'rare a movie can intelligent one every regard except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,418 - Comparer - DEBUG - positive phrase : intelligent one every regard
+2017-12-10 18:16:05,418 - Comparer - DEBUG - considering phrase 'except storyline everything good' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - cannot deduce sentiment from phrase 'except storyline everything good'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - considering phrase 'storyline everything good ultimately' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - cannot deduce sentiment from phrase 'storyline everything good ultimately'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - considering phrase 'everything good ultimately scuttled' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - cannot deduce sentiment from phrase 'everything good ultimately scuttled'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - considering phrase 'good ultimately scuttled a' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - cannot deduce sentiment from phrase 'good ultimately scuttled a'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - considering phrase 'ultimately scuttled a plot' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - cannot deduce sentiment from phrase 'ultimately scuttled a plot'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - considering phrase 'scuttled a plot just' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - cannot deduce sentiment from phrase 'scuttled a plot just'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - considering phrase 'a plot just boring' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a plot just boring'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - considering phrase 'plot just boring obvious' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - cannot deduce sentiment from phrase 'plot just boring obvious'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - considering phrase 'rare a movie' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - cannot deduce sentiment from phrase 'rare a movie'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - considering phrase 'a movie can' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a movie can'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - considering phrase 'except storyline everything' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - cannot deduce sentiment from phrase 'except storyline everything'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - considering phrase 'storyline everything good' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - cannot deduce sentiment from phrase 'storyline everything good'
+2017-12-10 18:16:05,433 - Comparer - DEBUG - considering phrase 'everything good ultimately' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - cannot deduce sentiment from phrase 'everything good ultimately'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - considering phrase 'good ultimately scuttled' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - cannot deduce sentiment from phrase 'good ultimately scuttled'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - considering phrase 'ultimately scuttled a' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - cannot deduce sentiment from phrase 'ultimately scuttled a'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - considering phrase 'scuttled a plot' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - cannot deduce sentiment from phrase 'scuttled a plot'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - considering phrase 'a plot just' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a plot just'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - considering phrase 'plot just boring' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - cannot deduce sentiment from phrase 'plot just boring'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - considering phrase 'just boring obvious' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - cannot deduce sentiment from phrase 'just boring obvious'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - considering phrase 'rare a' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - cannot deduce sentiment from phrase 'rare a'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - considering phrase 'a movie' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a movie'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - considering phrase 'movie can' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,449 - Comparer - DEBUG - cannot deduce sentiment from phrase 'movie can'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - considering phrase 'except storyline' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - cannot deduce sentiment from phrase 'except storyline'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - considering phrase 'storyline everything' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - cannot deduce sentiment from phrase 'storyline everything'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - considering phrase 'everything good' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - cannot deduce sentiment from phrase 'everything good'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - considering phrase 'good ultimately' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - cannot deduce sentiment from phrase 'good ultimately'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - considering phrase 'ultimately scuttled' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - cannot deduce sentiment from phrase 'ultimately scuttled'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - considering phrase 'scuttled a' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - cannot deduce sentiment from phrase 'scuttled a'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - considering phrase 'a plot' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a plot'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - considering phrase 'plot just' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - cannot deduce sentiment from phrase 'plot just'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - considering phrase 'just boring' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - cannot deduce sentiment from phrase 'just boring'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - considering phrase 'boring obvious' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - cannot deduce sentiment from phrase 'boring obvious'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - considering phrase 'rare' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - cannot deduce sentiment from phrase 'rare'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - considering phrase 'a' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - considering phrase 'movie' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - cannot deduce sentiment from phrase 'movie'
+2017-12-10 18:16:05,465 - Comparer - DEBUG - considering phrase 'can' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,481 - Comparer - DEBUG - cannot deduce sentiment from phrase 'can'
+2017-12-10 18:16:05,484 - Comparer - DEBUG - considering phrase 'every' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,486 - Comparer - DEBUG - cannot deduce sentiment from phrase 'every'
+2017-12-10 18:16:05,487 - Comparer - DEBUG - considering phrase 'except' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,488 - Comparer - DEBUG - cannot deduce sentiment from phrase 'except'
+2017-12-10 18:16:05,489 - Comparer - DEBUG - considering phrase 'storyline' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,490 - Comparer - DEBUG - cannot deduce sentiment from phrase 'storyline'
+2017-12-10 18:16:05,491 - Comparer - DEBUG - considering phrase 'everything' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,492 - Comparer - DEBUG - cannot deduce sentiment from phrase 'everything'
+2017-12-10 18:16:05,493 - Comparer - DEBUG - considering phrase 'good' from 'rare a movie can except storyline everything good ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,494 - Comparer - DEBUG - positive phrase : good
+2017-12-10 18:16:05,494 - Comparer - DEBUG - considering phrase 'ultimately' from 'rare a movie can except storyline everything ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,495 - Comparer - DEBUG - cannot deduce sentiment from phrase 'ultimately'
+2017-12-10 18:16:05,496 - Comparer - DEBUG - considering phrase 'scuttled' from 'rare a movie can except storyline everything ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,497 - Comparer - DEBUG - cannot deduce sentiment from phrase 'scuttled'
+2017-12-10 18:16:05,497 - Comparer - DEBUG - considering phrase 'a' from 'rare a movie can except storyline everything ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,498 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a'
+2017-12-10 18:16:05,499 - Comparer - DEBUG - considering phrase 'plot' from 'rare a movie can except storyline everything ultimately scuttled a plot just boring obvious'
+2017-12-10 18:16:05,499 - Comparer - DEBUG - negative phrase : plot
+2017-12-10 18:16:05,500 - Comparer - DEBUG - considering phrase 'just' from 'rare a movie can except storyline everything ultimately scuttled a just boring obvious'
+2017-12-10 18:16:05,500 - Comparer - DEBUG - positive phrase : just
+2017-12-10 18:16:05,500 - Comparer - DEBUG - considering phrase 'boring' from 'rare a movie can except storyline everything ultimately scuttled a boring obvious'
+2017-12-10 18:16:05,501 - Comparer - DEBUG - negative phrase : boring
+2017-12-10 18:16:05,501 - Comparer - DEBUG - considering phrase 'obvious' from 'rare a movie can except storyline everything ultimately scuttled a obvious'
+2017-12-10 18:16:05,502 - Comparer - DEBUG - cannot deduce sentiment from phrase 'obvious'
+2017-12-10 18:16:05,502 - Comparer - DEBUG - sentence - it's rare that a movie can be as intelligent as this one is in every regard except its storyline everything that's good is ultimately scuttled by a plot that's just too boring and obvious - is positive
+2017-12-10 18:16:05,505 - Comparer - DEBUG - an audience full of 1.062427157338025e-06 2.1286831540272555e-06 1
+2017-12-10 18:16:05,507 - Comparer - DEBUG - is an 8.393174542970397e-05 4.044497992651786e-05 1
+2017-12-10 18:16:05,507 - Comparer - DEBUG - lacking in 2.12485431467605e-06 1.0643415770136279e-05 1
+2017-12-10 18:16:05,507 - Comparer - DEBUG - imagination and 1.062427157338025e-05 1.0643415770136278e-06 1
+2017-12-10 18:16:05,507 - Comparer - DEBUG - yet it's 4.2497086293521e-06 2.1286831540272555e-06 1
+2017-12-10 18:16:05,507 - Comparer - DEBUG - geared toward 1.062427157338025e-06 3.1930247310408835e-06 1
+2017-12-10 18:16:05,507 - Comparer - DEBUG - of both 8.4994172587042e-06 4.257366308054511e-06 1
+2017-12-10 18:16:05,507 - Comparer - DEBUG - is 0.002260844990815317 0.0021297474956042694 1
+2017-12-10 18:16:05,507 - Comparer - DEBUG - hollywood 6.79953380696336e-05 5.960312831276316e-05 1
+2017-12-10 18:16:05,511 - Comparer - DEBUG - concoction 2.12485431467605e-06 4.257366308054511e-06 1
+2017-12-10 18:16:05,511 - Comparer - DEBUG - authentic 1.5936407360070377e-05 8.514732616109022e-06 1
+2017-12-10 18:16:05,511 - Comparer - DEBUG - spirit 3.506009619215483e-05 1.3836440501177162e-05 1
+2017-12-10 18:16:05,511 - Comparer - DEBUG - sentence - sc2 is an autopilot hollywood concoction lacking in imagination and authentic christmas spirit yet it's geared toward an audience full of masters of both - is positive
+2017-12-10 18:16:05,511 - Comparer - DEBUG - sentence : sc2 is an autopilot hollywood concoction lacking in imagination and authentic christmas spirit yet it's geared toward an audience full of masters of both
+2017-12-10 18:16:05,511 - Comparer - DEBUG - tokenised sentence after cleaning : ['sc2', 'autopilot', 'hollywood', 'concoction', 'lacking', 'imagination', 'authentic', 'christmas', 'spirit', 'yet', 'geared', 'toward', 'audience', 'full', 'masters']
+2017-12-10 18:16:05,511 - Comparer - DEBUG - considering phrase 'sc2 autopilot hollywood concoction' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,515 - Comparer - DEBUG - cannot deduce sentiment from phrase 'sc2 autopilot hollywood concoction'
+2017-12-10 18:16:05,515 - Comparer - DEBUG - considering phrase 'autopilot hollywood concoction lacking' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,515 - Comparer - DEBUG - cannot deduce sentiment from phrase 'autopilot hollywood concoction lacking'
+2017-12-10 18:16:05,515 - Comparer - DEBUG - considering phrase 'hollywood concoction lacking imagination' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,515 - Comparer - DEBUG - cannot deduce sentiment from phrase 'hollywood concoction lacking imagination'
+2017-12-10 18:16:05,519 - Comparer - DEBUG - considering phrase 'concoction lacking imagination authentic' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,519 - Comparer - DEBUG - cannot deduce sentiment from phrase 'concoction lacking imagination authentic'
+2017-12-10 18:16:05,519 - Comparer - DEBUG - considering phrase 'lacking imagination authentic christmas' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,519 - Comparer - DEBUG - cannot deduce sentiment from phrase 'lacking imagination authentic christmas'
+2017-12-10 18:16:05,519 - Comparer - DEBUG - considering phrase 'imagination authentic christmas spirit' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,519 - Comparer - DEBUG - cannot deduce sentiment from phrase 'imagination authentic christmas spirit'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - considering phrase 'authentic christmas spirit yet' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - cannot deduce sentiment from phrase 'authentic christmas spirit yet'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - considering phrase 'christmas spirit yet geared' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - cannot deduce sentiment from phrase 'christmas spirit yet geared'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - considering phrase 'spirit yet geared toward' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - cannot deduce sentiment from phrase 'spirit yet geared toward'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - considering phrase 'yet geared toward audience' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - cannot deduce sentiment from phrase 'yet geared toward audience'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - considering phrase 'geared toward audience full' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - cannot deduce sentiment from phrase 'geared toward audience full'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - considering phrase 'toward audience full masters' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - cannot deduce sentiment from phrase 'toward audience full masters'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - considering phrase 'sc2 autopilot hollywood' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - cannot deduce sentiment from phrase 'sc2 autopilot hollywood'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - considering phrase 'autopilot hollywood concoction' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - cannot deduce sentiment from phrase 'autopilot hollywood concoction'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - considering phrase 'hollywood concoction lacking' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,523 - Comparer - DEBUG - cannot deduce sentiment from phrase 'hollywood concoction lacking'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - considering phrase 'concoction lacking imagination' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - cannot deduce sentiment from phrase 'concoction lacking imagination'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - considering phrase 'lacking imagination authentic' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - cannot deduce sentiment from phrase 'lacking imagination authentic'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - considering phrase 'imagination authentic christmas' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - cannot deduce sentiment from phrase 'imagination authentic christmas'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - considering phrase 'authentic christmas spirit' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - cannot deduce sentiment from phrase 'authentic christmas spirit'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - considering phrase 'christmas spirit yet' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - cannot deduce sentiment from phrase 'christmas spirit yet'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - considering phrase 'spirit yet geared' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - cannot deduce sentiment from phrase 'spirit yet geared'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - considering phrase 'yet geared toward' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - cannot deduce sentiment from phrase 'yet geared toward'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - considering phrase 'geared toward audience' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,538 - Comparer - DEBUG - cannot deduce sentiment from phrase 'geared toward audience'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - considering phrase 'toward audience full' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - cannot deduce sentiment from phrase 'toward audience full'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - considering phrase 'audience full masters' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - cannot deduce sentiment from phrase 'audience full masters'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - considering phrase 'sc2 autopilot' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - cannot deduce sentiment from phrase 'sc2 autopilot'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - considering phrase 'autopilot hollywood' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - cannot deduce sentiment from phrase 'autopilot hollywood'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - considering phrase 'hollywood concoction' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - cannot deduce sentiment from phrase 'hollywood concoction'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - considering phrase 'concoction lacking' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - cannot deduce sentiment from phrase 'concoction lacking'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - considering phrase 'lacking imagination' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - cannot deduce sentiment from phrase 'lacking imagination'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - considering phrase 'imagination authentic' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - cannot deduce sentiment from phrase 'imagination authentic'
+2017-12-10 18:16:05,554 - Comparer - DEBUG - considering phrase 'authentic christmas' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - cannot deduce sentiment from phrase 'authentic christmas'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - considering phrase 'christmas spirit' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - cannot deduce sentiment from phrase 'christmas spirit'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - considering phrase 'spirit yet' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - cannot deduce sentiment from phrase 'spirit yet'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - considering phrase 'yet geared' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - cannot deduce sentiment from phrase 'yet geared'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - considering phrase 'geared toward' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - cannot deduce sentiment from phrase 'geared toward'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - considering phrase 'toward audience' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - cannot deduce sentiment from phrase 'toward audience'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - considering phrase 'audience full' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - cannot deduce sentiment from phrase 'audience full'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - considering phrase 'full masters' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - cannot deduce sentiment from phrase 'full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - considering phrase 'sc2' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - cannot deduce sentiment from phrase 'sc2'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - considering phrase 'autopilot' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - cannot deduce sentiment from phrase 'autopilot'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - considering phrase 'hollywood' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - cannot deduce sentiment from phrase 'hollywood'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - considering phrase 'concoction' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - cannot deduce sentiment from phrase 'concoction'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - considering phrase 'lacking' from 'sc2 autopilot hollywood concoction lacking imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - negative phrase : lacking
+2017-12-10 18:16:05,570 - Comparer - DEBUG - considering phrase 'imagination' from 'sc2 autopilot hollywood concoction imagination authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,570 - Comparer - DEBUG - positive phrase : imagination
+2017-12-10 18:16:05,570 - Comparer - DEBUG - considering phrase 'authentic' from 'sc2 autopilot hollywood concoction authentic christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - positive phrase : authentic
+2017-12-10 18:16:05,585 - Comparer - DEBUG - considering phrase 'christmas' from 'sc2 autopilot hollywood concoction christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - cannot deduce sentiment from phrase 'christmas'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - considering phrase 'spirit' from 'sc2 autopilot hollywood concoction christmas spirit yet geared toward audience full masters'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - positive phrase : spirit
+2017-12-10 18:16:05,585 - Comparer - DEBUG - considering phrase 'yet' from 'sc2 autopilot hollywood concoction christmas yet geared toward audience full masters'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - cannot deduce sentiment from phrase 'yet'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - considering phrase 'geared' from 'sc2 autopilot hollywood concoction christmas yet geared toward audience full masters'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - cannot deduce sentiment from phrase 'geared'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - considering phrase 'toward' from 'sc2 autopilot hollywood concoction christmas yet geared toward audience full masters'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - cannot deduce sentiment from phrase 'toward'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - considering phrase 'audience' from 'sc2 autopilot hollywood concoction christmas yet geared toward audience full masters'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - cannot deduce sentiment from phrase 'audience'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - considering phrase 'full' from 'sc2 autopilot hollywood concoction christmas yet geared toward audience full masters'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - cannot deduce sentiment from phrase 'full'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - considering phrase 'masters' from 'sc2 autopilot hollywood concoction christmas yet geared toward audience full masters'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - positive phrase : masters
+2017-12-10 18:16:05,585 - Comparer - DEBUG - sentence - sc2 is an autopilot hollywood concoction lacking in imagination and authentic christmas spirit yet it's geared toward an audience full of masters of both - is positive
+2017-12-10 18:16:05,585 - Comparer - DEBUG - no excuse for 1.062427157338025e-06 2.1286831540272555e-06 1
+2017-12-10 18:16:05,585 - Comparer - DEBUG - film with a 1.062427157338025e-05 5.3217078850681395e-06 1
+2017-12-10 18:16:05,585 - Comparer - DEBUG - following up 1.062427157338025e-06 2.1286831540272555e-06 1
+2017-12-10 18:16:05,585 - Comparer - DEBUG - a delightful 1.2749125888056301e-05 1.0643415770136278e-06 1
+2017-12-10 18:16:05,585 - Comparer - DEBUG - there's 8.180689111502793e-05 0.0001532651870899624 1
+2017-12-10 18:16:05,585 - Comparer - DEBUG - a 0.0045726864851828595 0.004131774001966904 3
+2017-12-10 18:16:05,585 - Comparer - DEBUG - cold 1.5936407360070377e-05 3.405893046443609e-05 1
+2017-12-10 18:16:05,585 - Comparer - DEBUG - fish 6.3745629440281505e-06 9.57907419312265e-06 1
+2017-12-10 18:16:05,585 - Comparer - DEBUG - sentence - there's no excuse for following up a delightful well-crafted family film with a computer-generated cold fish - is positive
+2017-12-10 18:16:05,585 - Comparer - DEBUG - sentence : there's no excuse for following up a delightful well-crafted family film with a computer-generated cold fish
+2017-12-10 18:16:05,585 - Comparer - DEBUG - tokenised sentence after cleaning : ['no', 'excuse', 'following', 'a', 'delightful', 'well', 'crafted', 'family', 'film', 'a', 'computer', 'generated', 'cold', 'fish']
+2017-12-10 18:16:05,585 - Comparer - DEBUG - considering phrase 'no excuse following a' from 'no excuse following a delightful well crafted family film a computer generated cold fish'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - cannot deduce sentiment from phrase 'no excuse following a'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - considering phrase 'excuse following a delightful' from 'no excuse following a delightful well crafted family film a computer generated cold fish'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - cannot deduce sentiment from phrase 'excuse following a delightful'
+2017-12-10 18:16:05,585 - Comparer - DEBUG - considering phrase 'following a delightful well' from 'no excuse following a delightful well crafted family film a computer generated cold fish'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - cannot deduce sentiment from phrase 'following a delightful well'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - considering phrase 'a delightful well crafted' from 'no excuse following a delightful well crafted family film a computer generated cold fish'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a delightful well crafted'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - considering phrase 'delightful well crafted family' from 'no excuse following a delightful well crafted family film a computer generated cold fish'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - positive phrase : delightful well crafted family
+2017-12-10 18:16:05,601 - Comparer - DEBUG - considering phrase 'film a computer generated' from 'no excuse following a film a computer generated cold fish'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - cannot deduce sentiment from phrase 'film a computer generated'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - considering phrase 'a computer generated cold' from 'no excuse following a film a computer generated cold fish'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a computer generated cold'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - considering phrase 'computer generated cold fish' from 'no excuse following a film a computer generated cold fish'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - cannot deduce sentiment from phrase 'computer generated cold fish'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - considering phrase 'no excuse following' from 'no excuse following a film a computer generated cold fish'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - cannot deduce sentiment from phrase 'no excuse following'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - considering phrase 'excuse following a' from 'no excuse following a film a computer generated cold fish'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - cannot deduce sentiment from phrase 'excuse following a'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - considering phrase 'film a computer' from 'no excuse following a film a computer generated cold fish'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - cannot deduce sentiment from phrase 'film a computer'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - considering phrase 'a computer generated' from 'no excuse following a film a computer generated cold fish'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a computer generated'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - considering phrase 'computer generated cold' from 'no excuse following a film a computer generated cold fish'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - cannot deduce sentiment from phrase 'computer generated cold'
+2017-12-10 18:16:05,601 - Comparer - DEBUG - considering phrase 'generated cold fish' from 'no excuse following a film a computer generated cold fish'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - cannot deduce sentiment from phrase 'generated cold fish'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - considering phrase 'no excuse' from 'no excuse following a film a computer generated cold fish'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - negation of negative phrase : no excuse
+2017-12-10 18:16:05,616 - Comparer - DEBUG - considering phrase 'following a' from 'following a film a computer generated cold fish'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - cannot deduce sentiment from phrase 'following a'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - considering phrase 'film a' from 'following a film a computer generated cold fish'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - cannot deduce sentiment from phrase 'film a'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - considering phrase 'a computer' from 'following a film a computer generated cold fish'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a computer'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - considering phrase 'computer generated' from 'following a film a computer generated cold fish'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - cannot deduce sentiment from phrase 'computer generated'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - considering phrase 'generated cold' from 'following a film a computer generated cold fish'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - cannot deduce sentiment from phrase 'generated cold'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - considering phrase 'cold fish' from 'following a film a computer generated cold fish'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - cannot deduce sentiment from phrase 'cold fish'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - considering phrase 'following' from 'following a film a computer generated cold fish'
+2017-12-10 18:16:05,616 - Comparer - DEBUG - cannot deduce sentiment from phrase 'following'
+2017-12-10 18:16:05,632 - Comparer - DEBUG - considering phrase 'a' from 'following a film a computer generated cold fish'
+2017-12-10 18:16:05,632 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a'
+2017-12-10 18:16:05,636 - Comparer - DEBUG - considering phrase 'film' from 'following a film a computer generated cold fish'
+2017-12-10 18:16:05,636 - Comparer - DEBUG - cannot deduce sentiment from phrase 'film'
+2017-12-10 18:16:05,636 - Comparer - DEBUG - considering phrase 'a' from 'following a film a computer generated cold fish'
+2017-12-10 18:16:05,640 - Comparer - DEBUG - cannot deduce sentiment from phrase 'a'
+2017-12-10 18:16:05,640 - Comparer - DEBUG - considering phrase 'computer' from 'following a film a computer generated cold fish'
+2017-12-10 18:16:05,640 - Comparer - DEBUG - cannot deduce sentiment from phrase 'computer'
+2017-12-10 18:16:05,640 - Comparer - DEBUG - considering phrase 'generated' from 'following a film a computer generated cold fish'
+2017-12-10 18:16:05,644 - Comparer - DEBUG - positive phrase : generated
+2017-12-10 18:16:05,644 - Comparer - DEBUG - considering phrase 'cold' from 'following a film a computer cold fish'
+2017-12-10 18:16:05,644 - Comparer - DEBUG - negative phrase : cold
+2017-12-10 18:16:05,644 - Comparer - DEBUG - considering phrase 'fish' from 'following a film a computer fish'
+2017-12-10 18:16:05,644 - Comparer - DEBUG - cannot deduce sentiment from phrase 'fish'
+2017-12-10 18:16:05,644 - Comparer - DEBUG - sentence - there's no excuse for following up a delightful well-crafted family film with a computer-generated cold fish - is positive
+2017-12-10 18:16:05,648 - Comparer - DEBUG - here but the 2.12485431467605e-06 2.1286831540272555e-06 1
+2017-12-10 18:16:05,652 - Comparer - DEBUG - there's something 7.436990101366175e-06 1.490078207819079e-05 1
+2017-12-10 18:16:05,652 - Comparer - DEBUG - to go 2.2310970304098525e-05 2.5544197848327068e-05 1
+2017-12-10 18:16:05,652 - Comparer - DEBUG - the conservative 2.12485431467605e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,652 - Comparer - DEBUG - with 0.001107049097946222 0.0008429585289947933 1
+2017-12-10 18:16:05,652 - Comparer - DEBUG - potential 1.3811553045394325e-05 1.5965123655204417e-05 1
+2017-12-10 18:16:05,652 - Comparer - DEBUG - movie 0.0006321441586161249 0.0009057546820385973 1
+2017-12-10 18:16:05,652 - Comparer - DEBUG - decides 1.062427157338025e-06 4.257366308054511e-06 1
+2017-12-10 18:16:05,652 - Comparer - DEBUG - like 0.00035910037918025246 0.0005385568379688957 1
+2017-12-10 18:16:05,652 - Comparer - DEBUG - route 3.1872814720140752e-06 1.0643415770136278e-06 1
+2017-12-10 18:16:05,652 - Comparer - DEBUG - sentence - there's something with potential here but the movie decides like lavinia to go the conservative route - is negative
+2017-12-10 18:16:05,652 - Comparer - DEBUG - sentence : there's something with potential here but the movie decides like lavinia to go the conservative route
+2017-12-10 18:16:05,652 - Comparer - DEBUG - tokenised sentence after cleaning : ['something', 'potential', 'but', 'movie', 'decides', 'like', 'lavinia', 'go', 'conservative', 'route']
+2017-12-10 18:16:05,656 - Comparer - DEBUG - considering phrase 'something potential but movie' from 'something potential but movie decides like lavinia go conservative route'
+2017-12-10 18:16:05,656 - Comparer - DEBUG - cannot deduce sentiment from phrase 'something potential but movie'
+2017-12-10 18:16:05,656 - Comparer - DEBUG - considering phrase 'potential but movie decides' from 'something potential but movie decides like lavinia go conservative route'
+2017-12-10 18:16:05,656 - Comparer - DEBUG - cannot deduce sentiment from phrase 'potential but movie decides'
+2017-12-10 18:16:05,656 - Comparer - DEBUG - considering phrase 'but movie decides like' from 'something potential but movie decides like lavinia go conservative route'
+2017-12-10 18:16:05,660 - Comparer - DEBUG - cannot deduce sentiment from phrase 'but movie decides like'
+2017-12-10 18:16:05,660 - Comparer - DEBUG - considering phrase 'movie decides like lavinia' from 'something potential but movie decides like lavinia go conservative route'
+2017-12-10 18:16:05,660 - Comparer - DEBUG - cannot deduce sentiment from phrase 'movie decides like lavinia'
+2017-12-10 18:16:05,660 - Comparer - DEBUG - considering phrase 'decides like lavinia go' from 'something potential but movie decides like lavinia go conservative route'
+2017-12-10 18:16:05,664 - Comparer - DEBUG - cannot deduce sentiment from phrase 'decides like lavinia go'
+2017-12-10 18:16:05,664 - Comparer - DEBUG - considering phrase 'like lavinia go conservative' from 'something potential but movie decides like lavinia go conservative route'
+2017-12-10 18:16:05,664 - Comparer - DEBUG - positive phrase : like lavinia go conservative
+2017-12-10 18:16:05,664 - Comparer - DEBUG - considering phrase 'something potential but' from 'something potential but movie decides route'
+2017-12-10 18:16:05,664 - Comparer - DEBUG - cannot deduce sentiment from phrase 'something potential but'
+2017-12-10 18:16:05,668 - Comparer - DEBUG - considering phrase 'potential but movie' from 'something potential but movie decides route'
+2017-12-10 18:16:05,668 - Comparer - DEBUG - cannot deduce sentiment from phrase 'potential but movie'
+2017-12-10 18:16:05,668 - Comparer - DEBUG - considering phrase 'but movie decides' from 'something potential but movie decides route'
+2017-12-10 18:16:05,668 - Comparer - DEBUG - cannot deduce sentiment from phrase 'but movie decides'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - considering phrase 'something potential' from 'something potential but movie decides route'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - cannot deduce sentiment from phrase 'something potential'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - considering phrase 'potential but' from 'something potential but movie decides route'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - cannot deduce sentiment from phrase 'potential but'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - considering phrase 'but movie' from 'something potential but movie decides route'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - cannot deduce sentiment from phrase 'but movie'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - considering phrase 'movie decides' from 'something potential but movie decides route'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - cannot deduce sentiment from phrase 'movie decides'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - considering phrase 'something' from 'something potential but movie decides route'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - cannot deduce sentiment from phrase 'something'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - considering phrase 'potential' from 'something potential but movie decides route'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - cannot deduce sentiment from phrase 'potential'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - considering phrase 'but' from 'something potential but movie decides route'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - cannot deduce sentiment from phrase 'but'
+2017-12-10 18:16:05,673 - Comparer - DEBUG - considering phrase 'movie' from 'something potential but movie decides route'
+2017-12-10 18:16:05,688 - Comparer - DEBUG - cannot deduce sentiment from phrase 'movie'
+2017-12-10 18:16:05,688 - Comparer - DEBUG - considering phrase 'decides' from 'something potential but movie decides route'
+2017-12-10 18:16:05,688 - Comparer - DEBUG - cannot deduce sentiment from phrase 'decides'
+2017-12-10 18:16:05,688 - Comparer - DEBUG - considering phrase 'route' from 'something potential but movie decides route'
+2017-12-10 18:16:05,688 - Comparer - DEBUG - cannot deduce sentiment from phrase 'route'
+2017-12-10 18:16:05,688 - Comparer - DEBUG - sentence - there's something with potential here but the movie decides like lavinia to go the conservative route - is positive
+2017-12-10 18:16:05,688 - Comparer - DEBUG - the soundtrack 3.1872814720140752e-06 7.450391039095395e-06 1
+2017-12-10 18:16:05,688 - Comparer - DEBUG - sucked 1.062427157338025e-06 1.5965123655204417e-05 1
+2017-12-10 18:16:05,688 - Comparer - DEBUG - sentence - the soundtrack sucked - is negative
+2017-12-10 18:16:05,688 - Comparer - DEBUG - sentence : the soundtrack sucked
+2017-12-10 18:16:05,688 - Comparer - DEBUG - tokenised sentence after cleaning : ['soundtrack', 'sucked']
+2017-12-10 18:16:05,688 - Comparer - DEBUG - considering phrase 'soundtrack sucked' from 'soundtrack sucked'
+2017-12-10 18:16:05,688 - Comparer - DEBUG - cannot deduce sentiment from phrase 'soundtrack sucked'
+2017-12-10 18:16:05,688 - Comparer - DEBUG - considering phrase 'soundtrack sucked' from 'soundtrack sucked'
+2017-12-10 18:16:05,688 - Comparer - DEBUG - cannot deduce sentiment from phrase 'soundtrack sucked'
+2017-12-10 18:16:05,688 - Comparer - DEBUG - considering phrase 'soundtrack sucked' from 'soundtrack sucked'
+2017-12-10 18:16:05,688 - Comparer - DEBUG - cannot deduce sentiment from phrase 'soundtrack sucked'
+2017-12-10 18:16:05,688 - Comparer - DEBUG - considering phrase 'soundtrack' from 'soundtrack sucked'
+2017-12-10 18:16:05,688 - Comparer - DEBUG - positive phrase : soundtrack
+2017-12-10 18:16:05,688 - Comparer - DEBUG - considering phrase 'sucked' from 'sucked'
+2017-12-10 18:16:05,688 - Comparer - DEBUG - negative phrase : sucked
+2017-12-10 18:16:05,688 - Comparer - DEBUG - sentence - the soundtrack sucked - is neutral
+2017-12-10 18:16:05,704 - Comparer - INFO - Naive Bayes classifier
+2017-12-10 18:16:05,704 - Comparer - INFO - Correct classification : 7
+2017-12-10 18:16:05,704 - Comparer - INFO - Wrong classification : 3
+2017-12-10 18:16:05,704 - Comparer - INFO - Accuracy classification : 70
+2017-12-10 18:16:05,704 - Comparer - INFO - Bag of Words classifier
+2017-12-10 18:16:05,704 - Comparer - INFO - Correct : 2
+2017-12-10 18:16:05,704 - Comparer - INFO - Wrong classification : 8
+2017-12-10 18:16:05,704 - Comparer - INFO - Accuracy : 20
+2017-12-10 18:16:05,704 - Comparer - INFO - textblob classifier
+2017-12-10 18:16:05,704 - Comparer - INFO - Correct : 4
+2017-12-10 18:16:05,704 - Comparer - INFO - Wrong classification : 6
+2017-12-10 18:16:05,704 - Comparer - INFO - Accuracy : 40

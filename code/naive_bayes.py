@@ -5,7 +5,7 @@ class NaiveBayes():
     implementation of Naive Bayes classifer
     '''
     def __init__(self, verbose=True, test_set_count=500, no_of_grams=1):
-        self.logger = Logger('NaiveBayes', 'NaiveBayes.log', is_verbose=verbose)
+        self.logger = Logger('NaiveBayes', 'logs\\NaiveBayes.log', is_verbose=verbose)
         self.verbose = verbose
         self.counts = dict()
         self.positive_bag = []
@@ -365,12 +365,3 @@ class NaiveBayes():
         self.logger.debug("wrong output : " + str(wrong))
         self.logger.debug("accuracy (%) : " + str(int((correct/len(bag)) * 100)))
         return correct, wrong
-
-
-nb = NaiveBayes(verbose=True, test_set_count=500, no_of_grams=4)
-nb.ready()
-response = nb.test_for_fish_guitar()
-print(response)
-# while(True):
-#     sentence = input("Give me a sentence : ")
-#     print(nb.classify(sentence))
