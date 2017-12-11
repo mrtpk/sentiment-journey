@@ -9,7 +9,9 @@ from bag_of_words import BagOfWordSentiment
 class Comparer():
     def __init__(self, no_of_testcases = 100, verbose=True, nb=None, bw=None):
         self.logger = Logger('Comparer', 'logs\\comparer.log', is_verbose=verbose)
-        
+        self.load_html_structure()
+        self.file_html = str()
+
         if nb is None:
             self.nb = NaiveBayes(verbose=False, test_set_count=no_of_testcases, no_of_grams=4)
             self.nb.ready()
@@ -85,6 +87,8 @@ class Comparer():
     def store_results(self):
         with open('output\\comparison_data.json', 'w') as file_pointer:
             json.dump(self.testcases, file_pointer)
+        with open('output\\output.html', 'w') as file_pointer:
+            file_pointer.write(self.file_html)
 
     def test_for_bag(self, bag, actual_result):
         for sentence in bag:
@@ -100,6 +104,19 @@ class Comparer():
                 "bw_result": list(bw_result),
                 "tb_result": list(tb_result)
             }
+            temp_html = self.html_structure
+            temp_html = temp_html.replace("@sentence", str(sentence))
+            temp_html = temp_html.replace("@actual_label", str(actual_result))
+            temp_html = temp_html.replace("@nb_prediction", str(nb_result[1]))
+            temp_html = temp_html.replace("@bw_prediction", str(bw_result[1]))
+            temp_html = temp_html.replace("@tb_prediction", str(tb_result[1]))
+            temp_html = temp_html.replace("@nb_label", str(nb_result[0]))
+            temp_html = temp_html.replace("@bw_label", str(bw_result[0]))
+            temp_html = temp_html.replace("@tb_label", str(tb_result[0]))
+            temp_html = temp_html.replace("@nb_score", str(nb_result[2]))
+            temp_html = temp_html.replace("@bw_score", str(bw_result[2]))
+            temp_html = temp_html.replace("@tb_score", str(tb_result[2]))
+            self.file_html = self.file_html + temp_html   
 
             if nb_result[1] == actual_result:
                 self.nb_correct += 1
@@ -127,3 +144,10 @@ class Comparer():
         if polarity < 0:
             return ("negative", 0, polarity)
         return ("neutral", -1, polarity)    
+
+    def load_html_structure(self):
+        '''
+        stores the data from dictionary to html file
+        '''
+        with open('res\\table_structure.html', 'r') as myfile:
+            self.html_structure = myfile.read()

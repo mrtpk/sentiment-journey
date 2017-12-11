@@ -216,7 +216,7 @@ class NaiveBayes():
                            'res\\dataset\\uci_dataset\\imdb_labelled.txt']
 
         positive_bag_paths = ['res\\dataset\\polarity_dataset\\rt-polarity-pos.txt']
-        negative_bag_paths = ['res\dataset\polarity_dataset\\rt-polarity-neg.txt']
+        negative_bag_paths = ['res\\dataset\\polarity_dataset\\rt-polarity-neg.txt']
 
         count_positive, count_negative = 0,0
         for filename in mixed_bag_paths:

@@ -1,12 +1,12 @@
-2017-12-10 22:47:10,117 - Comparer - INFO - Naive Bayes classifier
-2017-12-10 22:47:10,117 - Comparer - INFO - Correct classification : 86
-2017-12-10 22:47:10,117 - Comparer - INFO - Wrong classification : 14
-2017-12-10 22:47:10,117 - Comparer - INFO - Accuracy classification : 86
-2017-12-10 22:47:10,117 - Comparer - INFO - Bag of Words classifier
-2017-12-10 22:47:10,117 - Comparer - INFO - Correct : 59
-2017-12-10 22:47:10,117 - Comparer - INFO - Wrong classification : 41
-2017-12-10 22:47:10,117 - Comparer - INFO - Accuracy : 59
-2017-12-10 22:47:10,117 - Comparer - INFO - textblob classifier
-2017-12-10 22:47:10,117 - Comparer - INFO - Correct : 68
-2017-12-10 22:47:10,117 - Comparer - INFO - Wrong classification : 32
-2017-12-10 22:47:10,117 - Comparer - INFO - Accuracy : 68
+2017-12-11 21:26:21,887 - Comparer - INFO - Naive Bayes classifier
+2017-12-11 21:26:21,887 - Comparer - INFO - Correct classification : 84
+2017-12-11 21:26:21,887 - Comparer - INFO - Wrong classification : 16
+2017-12-11 21:26:21,887 - Comparer - INFO - Accuracy classification : 84
+2017-12-11 21:26:21,887 - Comparer - INFO - Bag of Words classifier
+2017-12-11 21:26:21,887 - Comparer - INFO - Correct : 53
+2017-12-11 21:26:21,887 - Comparer - INFO - Wrong classification : 47
+2017-12-11 21:26:21,887 - Comparer - INFO - Accuracy : 53
+2017-12-11 21:26:21,887 - Comparer - INFO - textblob classifier
+2017-12-11 21:26:21,887 - Comparer - INFO - Correct : 55
+2017-12-11 21:26:21,887 - Comparer - INFO - Wrong classification : 45
+2017-12-11 21:26:21,887 - Comparer - INFO - Accuracy : 55

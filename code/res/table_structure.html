@@ -1,0 +1,91 @@
+<hr>
+<table>
+    <thead>
+        <td>Sentence :</td>
+        <td colspan="3">@sentence</td>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Correct classification : </td>
+            <td colspan="3">@actual_label</td></td>
+        </tr>
+
+        <tr>
+            <td>
+                <table>
+                    <thead>
+                        <td>Method</td>
+                        <thead>
+                            <tbody>
+                                <tr>
+                                    <td>Class</td>
+                                </tr>
+                                <tr>
+                                    <td>Label</td>
+                                </tr>
+                                <tr>
+                                    <td>Score</td>
+                                </tr>
+                            </tbody>
+                </table>
+            </td>
+
+            <td>
+                <table>
+                    <thead>
+                        <td>Naive Bayes</td>
+                        <thead>
+                            <tbody>
+                                <tr>
+                                    <td>@nb_prediction</td>
+                                </tr>
+                                <tr>
+                                    <td>@nb_label</td>
+                                </tr>
+                                <tr>
+                                    <td>@nb_score</td>
+                                </tr>
+                            </tbody>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <thead>
+                        <td>Bag of words</td>
+                        <thead>
+                            <tbody>
+                                <tr>
+                                    <td>@bw_prediction</td>
+                                </tr>
+                                <tr>
+                                    <td>@bw_label</td>
+                                </tr>
+                                <tr>
+                                    <td>@bw_score</td>
+                                </tr>
+                            </tbody>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <thead>
+                        <td>Textblob</td>
+                        <thead>
+                            <tbody>
+                                <tr>
+                                    <td>@tb_prediction</td>
+                                </tr>
+                                <tr>
+                                    <td>@tb_label</td>
+                                </tr>
+                                <tr>
+                                    <td>@tb_score</td>
+                                </tr>
+                            </tbody>
+                </table>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+<hr>
