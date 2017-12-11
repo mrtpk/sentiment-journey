@@ -10,7 +10,6 @@ class Comparer():
     def __init__(self, no_of_testcases = 100, verbose=True, nb=None, bw=None):
         self.logger = Logger('Comparer', 'logs\\comparer.log', is_verbose=verbose)
         self.load_html_structure()
-        self.file_html = str()
 
         if nb is None:
             self.nb = NaiveBayes(verbose=False, test_set_count=no_of_testcases, no_of_grams=4)
@@ -35,7 +34,6 @@ class Comparer():
         self.testcases = dict()
 
     def ready(self):
-
         self.positive_test_bag = self.nb.get_positive_test_bag()
         self.negative_test_bag = self.nb.get_negative_test_bag()
 
@@ -66,6 +64,17 @@ class Comparer():
         self.logger.info("Wrong classification : " + str(self.tb_wrong))
         self.logger.info("Accuracy : " + str(int(self.tb_accuracy)))
 
+        self.file_html = self.file_html.replace("@nb_right", str(self.nb_correct))
+        self.file_html = self.file_html.replace("@bw_right", str(self.bw_correct))
+        self.file_html = self.file_html.replace("@tb_right", str(self.tb_correct))
+        self.file_html = self.file_html.replace("@nb_wrong", str(self.nb_wrong))
+        self.file_html = self.file_html.replace("@bw_wrong", str(self.bw_wrong))
+        self.file_html = self.file_html.replace("@tb_wrong", str(self.tb_wrong))
+        self.file_html = self.file_html.replace("@nb_accuracy", str(int(self.nb_accuracy)))
+        self.file_html = self.file_html.replace("@bw_accuracy", str(int(self.bw_accuracy)))
+        self.file_html = self.file_html.replace("@tb_accuracy", str(int(self.tb_accuracy)))
+        self.file_html = self.file_html.replace("@total_sentences", str(len(self.testcases)))
+
         self.testcases["nb_results"] = {
             "correct" : self.nb_correct,
             "wrong" : self.nb_wrong,
@@ -85,9 +94,9 @@ class Comparer():
         self.store_results()
 
     def store_results(self):
-        with open('output\\comparison_data.json', 'w') as file_pointer:
+        with open('output\\comparison_data.json', 'w', encoding="utf-8") as file_pointer:
             json.dump(self.testcases, file_pointer)
-        with open('output\\output.html', 'w') as file_pointer:
+        with open('output\\output.html', 'w', encoding="utf-8") as file_pointer:
             file_pointer.write(self.file_html)
 
     def test_for_bag(self, bag, actual_result):
@@ -151,3 +160,7 @@ class Comparer():
         '''
         with open('res\\table_structure.html', 'r') as myfile:
             self.html_structure = myfile.read()
+
+        with open('res\\table_header.html', 'r') as myfile:
+            self.file_html = myfile.read()
+         
