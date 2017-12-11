@@ -198,10 +198,10 @@ class BagOfWordSentiment():
         '''
         loads the data necessary for analysis
         '''
-        double_negation_files = ['res\\ngram_dataset\\double_negation.txt']
-        negations_files = ['res\\ngram_dataset\\negation.txt']
-        positive_word_files = ['res\\ngram_dataset\\positive_words.txt']
-        negative_word_files = ['res\\ngram_dataset\\negative_words.txt']
+        double_negation_files = ['res\\bag_of_words_dataset\\double_negation.txt']
+        negations_files = ['res\\bag_of_words_dataset\\negation.txt']
+        positive_word_files = ['res\\bag_of_words_dataset\\positive_words.txt']
+        negative_word_files = ['res\\bag_of_words_dataset\\negative_words.txt']
 
         self.double_negations, self.double_negations_collection = self.get_words(self.load_data_from_files(double_negation_files))
         self.negations, self.negation_collection = self.get_words(self.load_data_from_files(negations_files))
@@ -255,7 +255,7 @@ class BagOfWordSentiment():
         return sentence.lower().strip()
 
     def remove_stop_words(self, sentence):
-        stop_words = self.load_data_from_files(['res\\ngram_dataset\\refined_stop_words.txt'])
+        stop_words = self.load_data_from_files(['res\\bag_of_words_dataset\\refined_stop_words.txt'])
         sentence = sentence.split(" ")
         stop_word_set = set()
         for stop_word in stop_words:

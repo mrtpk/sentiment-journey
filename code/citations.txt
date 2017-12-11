@@ -1,0 +1,8 @@
+Datasets used from,
+http://www.cs.cornell.edu/people/pabo/movie-review-data
+https://archive.ics.uci.edu/ml/datasets/Sentiment+Labelled+Sentences
+
+https://www.ranks.nl/stopwords for english stop words
+http://provalisresearch.com/Download/WSD.zip for bag of words method
+
+
